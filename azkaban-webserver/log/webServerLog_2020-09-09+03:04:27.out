@@ -1,0 +1,1119 @@
+Error: HADOOP_HOME is not set. Hadoop job types will not run properly.
+bin/internal/../..
+:bin/internal/../../lib/activation-1.1.jar:bin/internal/../../lib/antlr-2.7.2.jar:bin/internal/../../lib/aopalliance-1.0.jar:bin/internal/../../lib/az-core-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/az-flow-trigger-dependency-plugin-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/azkaban-common-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/azkaban-db-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/azkaban-spi-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/azkaban-web-server-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/c3p0-0.9.1.1.jar:bin/internal/../../lib/cached-http-filesystem-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/cglib-nodep-2.2.jar:bin/internal/../../lib/commons-beanutils-1.7.0.jar:bin/internal/../../lib/commons-chain-1.1.jar:bin/internal/../../lib/commons-codec-1.13.jar:bin/internal/../../lib/commons-collections-3.2.2.jar:bin/internal/../../lib/commons-compress-1.2.jar:bin/internal/../../lib/commons-dbcp2-2.7.0.jar:bin/internal/../../lib/commons-dbutils-1.5.jar:bin/internal/../../lib/commons-digester-1.8.jar:bin/internal/../../lib/commons-fileupload-1.2.1.jar:bin/internal/../../lib/commons-io-2.4.jar:bin/internal/../../lib/commons-jexl-2.1.1.jar:bin/internal/../../lib/commons-lang-2.6.jar:bin/internal/../../lib/commons-logging-1.2.jar:bin/internal/../../lib/commons-math3-3.0.jar:bin/internal/../../lib/commons-pool2-2.7.0.jar:bin/internal/../../lib/commons-validator-1.3.1.jar:bin/internal/../../lib/data-1.15.7.jar:bin/internal/../../lib/data-transform-1.15.7.jar:bin/internal/../../lib/dom4j-1.1.jar:bin/internal/../../lib/gson-2.8.1.jar:bin/internal/../../lib/guava-21.0.jar:bin/internal/../../lib/guice-4.1.0.jar:bin/internal/../../lib/httpclient-4.5.3.jar:bin/internal/../../lib/httpcore-4.4.6.jar:bin/internal/../../lib/jackson-core-2.2.2.jar:bin/internal/../../lib/jackson-core-asl-1.9.5.jar:bin/internal/../../lib/jackson-mapper-asl-1.9.5.jar:bin/internal/../../lib/javax.inject-1.jar:bin/internal/../../lib/javax.servlet-api-3.0.1.jar:bin/internal/../../lib/jetty-6.1.26.jar:bin/internal/../../lib/jetty-util-6.1.26.jar:bin/internal/../../lib/joda-time-2.0.jar:bin/internal/../../lib/jopt-simple-4.3.jar:bin/internal/../../lib/json-20070829.jar:bin/internal/../../lib/li-jersey-uri-1.15.7.jar:bin/internal/../../lib/log4j-1.2.17.jar:bin/internal/../../lib/mail-1.4.5.jar:bin/internal/../../lib/metrics-core-3.1.0.jar:bin/internal/../../lib/metrics-jvm-3.1.0.jar:bin/internal/../../lib/mina-core-1.1.7.jar:bin/internal/../../lib/mysql-connector-java-5.1.28.jar:bin/internal/../../lib/netty-3.2.3.Final.jar:bin/internal/../../lib/oro-2.0.8.jar:bin/internal/../../lib/parseq-1.3.6.jar:bin/internal/../../lib/pegasus-common-1.15.7.jar:bin/internal/../../lib/quartz-2.2.1.jar:bin/internal/../../lib/r2-1.15.7.jar:bin/internal/../../lib/restli-common-1.15.7.jar:bin/internal/../../lib/restli-server-1.15.7.jar:bin/internal/../../lib/servlet-api-2.5-20081211.jar:bin/internal/../../lib/slf4j-api-1.7.18.jar:bin/internal/../../lib/slf4j-log4j12-1.7.18.jar:bin/internal/../../lib/snakeyaml-1.18.jar:bin/internal/../../lib/snappy-0.3.jar:bin/internal/../../lib/sslext-1.2-0.jar:bin/internal/../../lib/struts-core-1.3.8.jar:bin/internal/../../lib/struts-taglib-1.3.8.jar:bin/internal/../../lib/struts-tiles-1.3.8.jar:bin/internal/../../lib/velocity-1.7.jar:bin/internal/../../lib/velocity-tools-2.0.jar:bin/internal/../../extlib/*.jar:bin/internal/../../plugins/*/*.jar
+2020/09/09 03:04:30.207 +0000 INFO [AzkabanWebServer] [Azkaban] Starting Jetty Azkaban Web Server...
+2020/09/09 03:04:30.304 +0000 INFO [AzkabanServer] [Azkaban] Loading azkaban settings file from bin/internal/../../conf
+2020/09/09 03:04:30.304 +0000 INFO [AzkabanServer] [Azkaban] Loading azkaban properties file
+2020/09/09 03:04:33.041 +0000 INFO [log] [Azkaban] Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2020/09/09 03:04:33.041 +0000 INFO [WebServerProvider] [Azkaban] Setting up connector with stats on: true
+2020/09/09 03:04:33.087 +0000 INFO [WebServerProvider] [Azkaban] Starting server on port: 8081 # Max threads: 25
+2020/09/09 03:04:33.336 +0000 INFO [JdbcProjectImpl] [Azkaban] project temporary folder is being constructed.
+2020/09/09 03:04:33.336 +0000 WARN [StorageCleaner] [Azkaban] Project cleanup disabled. All artifacts will be stored.
+2020/09/09 03:04:33.337 +0000 INFO [ValidatorUtils] [Azkaban] Creating XmlValidatorManager instance (loading validators)...
+2020/09/09 03:04:33.344 +0000 WARN [XmlValidatorManager] [Azkaban] Validator directory validators does not exist or is not a directory.
+2020/09/09 03:04:33.345 +0000 WARN [XmlValidatorManager] [Azkaban] Azkaban properties file does not contain the key project.validators.xml.file
+2020/09/09 03:04:33.346 +0000 INFO [ValidatorUtils] [Azkaban] XmlValidatorManager instance created.
+2020/09/09 03:04:33.347 +0000 INFO [AzkabanProjectLoader] [Azkaban] Using temp dir: /app/temp
+2020/09/09 03:04:33.347 +0000 INFO [AzkabanProjectLoader] [Azkaban] Project version retention is set to 3
+2020/09/09 03:04:33.347 +0000 INFO [ProjectManager] [Azkaban] Loading active projects.
+2020/09/09 03:04:34.767 +0000 INFO [ProjectManager] [Azkaban] Loading flows from active projects.
+2020/09/09 03:04:34.814 +0000 INFO [ProjectManager] [Azkaban] Loading whitelisted projects.
+2020/09/09 03:04:34.814 +0000 INFO [ProjectManager] [Azkaban] ProjectManager instance created.
+2020/09/09 03:04:35.318 +0000 INFO [TriggerManager] [Azkaban] TriggerManager loaded.
+2020/09/09 03:04:35.319 +0000 WARN [SessionCache] [Azkaban] azkaban.session.max_number_per_ip_per_user is not configured. The number of sessions per IP per user is not being capped.
+2020/09/09 03:04:35.323 +0000 INFO [AzkabanWebServerModule] [Azkaban] Loading user manager class azkaban.user.XmlUserManager
+2020/09/09 03:04:35.930 +0000 INFO [XmlUserManager] [Azkaban] Loading user azkaban
+2020/09/09 03:04:35.931 +0000 INFO [XmlUserManager] [Azkaban] Loading user metrics
+2020/09/09 03:04:35.959 +0000 INFO [UserUtils] [Azkaban] Starting configuration watching thread.
+2020/09/09 03:04:36.176 +0000 INFO [AzkabanWebServer] [Azkaban] Loading built-in checker and action types
+2020/09/09 03:04:36.179 +0000 INFO [CheckerTypeLoader] [Azkaban] Registering checker BasicTimeChecker
+2020/09/09 03:04:36.180 +0000 INFO [CheckerTypeLoader] [Azkaban] Registering checker SlaChecker
+2020/09/09 03:04:36.180 +0000 INFO [CheckerTypeLoader] [Azkaban] Registering checker ExecutionChecker
+2020/09/09 03:04:36.180 +0000 INFO [ActionTypeLoader] [Azkaban] Registering action ExecuteFlowAction
+2020/09/09 03:04:36.180 +0000 INFO [ActionTypeLoader] [Azkaban] Registering action KillExecutionAction
+2020/09/09 03:04:36.181 +0000 INFO [ActionTypeLoader] [Azkaban] Registering action AlertAction
+2020/09/09 03:04:36.181 +0000 INFO [ActionTypeLoader] [Azkaban] Registering action CreateTriggerAction
+2020/09/09 03:04:36.182 +0000 INFO [PluginCheckerAndActionsLoader] [Azkaban] Loading plug-in checker and action types
+2020/09/09 03:04:36.189 +0000 ERROR [PluginCheckerAndActionsLoader] [Azkaban] plugin path plugins/triggers doesn't exist!
+2020/09/09 03:04:36.225 +0000 INFO [AzkabanWebServer] [Azkaban] Setting timezone to Asia/Beijing
+2020/09/09 03:04:36.225 +0000 INFO [AzkabanWebServer] [Azkaban] Registering MBeans...
+2020/09/09 03:04:36.304 +0000 INFO [MBeanRegistrationManager] [Azkaban] Bean azkaban.jmx.JmxJettyServer registered.
+2020/09/09 03:04:36.306 +0000 INFO [MBeanRegistrationManager] [Azkaban] Bean azkaban.jmx.JmxTriggerManager registered.
+2020/09/09 03:04:36.308 +0000 INFO [MBeanRegistrationManager] [Azkaban] Bean azkaban.jmx.JmxExecutorManager registered.
+2020/09/09 03:04:36.374 +0000 INFO [MBeanRegistrationManager] [Azkaban] Bean org.apache.log4j.jmx.HierarchyDynamicMBean registered.
+2020/09/09 03:04:36.375 +0000 INFO [AzkabanWebServer] [Azkaban] ************* loginLoggerObjName is null, make sure there is a logger with name azkaban.webapp.servlet.LoginAbstractAzkabanServlet
+2020/09/09 03:04:36.375 +0000 INFO [ExecutorManager] [Azkaban] Initializing executors from database.
+2020/09/09 03:04:36.383 +0000 INFO [ExecutorManager] [Azkaban] Loading running flows from database..
+2020/09/09 03:04:36.431 +0000 INFO [ExecutorManager] [Azkaban] Loaded 0 running flows
+2020/09/09 03:04:36.453 +0000 INFO [ExecutorManager] [Azkaban] QueueProcessorThread active turned true
+2020/09/09 03:04:36.467 +0000 INFO [ExecutionLogsCleaner] [Azkaban] Starting execution logs clean up thread
+2020/09/09 03:04:36.482 +0000 INFO [AzkabanWebServer] [Azkaban] Setting up web resource dir web/
+2020/09/09 03:04:36.478 +0000 INFO [ExecutionLogsCleaner] [Azkaban] Cleaning old logs from execution_logs
+2020/09/09 03:04:36.781 +0000 INFO [ExecutionLogsCleaner] [Azkaban] Cleaning old log files before 2020-06-17T03:04:36.496Z
+2020/09/09 03:04:36.960 +0000 INFO [JdbcTriggerImpl] [Azkaban] Loading all triggers from db.
+2020/09/09 03:04:37.178 +0000 INFO [Trigger] [Azkaban] Decoding for {"triggerCondition":{"nextCheckTime":"1599627600000","expression":"BasicTimeChecker_1.eval()","checkers":[{"checkerJson":{"nextCheckTime":"1599627600000","cronExpression":"0 0 5 * * ?","period":"null","skipPastChecks":"true","timezone":"UTC","firstCheckTime":"1599571634847","isRecurring":"true","id":"BasicTimeChecker_1","type":"BasicTimeChecker"},"type":"BasicTimeChecker"}]},"resetOnTrigger":"true","triggerId":"2","source":"SimpleTimeTrigger","resetOnExpire":"true","expireActions":[],"submitTime":"1599571634847","submitUser":"azkaban","lastModifyTime":"1599571634854","context":{},"actions":[{"actionJson":{"submitUser":"azkaban","actionId":"executeFlowAction","executionOptions":{"failureAction":"FINISH_CURRENTLY_RUNNING","memoryCheck":true,"queueLevel":0,"pipelineExecId":null,"concurrentOption":"skip","notifyOnFirstFailure":true,"notifyOnLastFailure":false,"pipelineLevel":null,"successEmailsOverride":false,"failureEmails":[],"disabled":[],"flowParameters":{},"successEmails":[],"mailCreator":"default","failureEmailsOverride":false},"slaOptions":[],"type":"ExecuteFlowAction","projectName":"aze11d4903-58a1-4d72-8127-edddaf8ea887","projectId":"51","flowName":"jsonDownload"},"type":"ExecuteFlowAction"}],"expireCondition":{"nextCheckTime":"2524608000000","expression":"EndTimeChecker_1.eval()","checkers":[{"checkerJson":{"nextCheckTime":"2524608000000","cronExpression":null,"period":"null","skipPastChecks":"false","timezone":"UTC","firstCheckTime":"1599571634847","isRecurring":"false","id":"EndTimeChecker_1","type":"BasicTimeChecker"},"type":"BasicTimeChecker"}]},"status":"READY","info":{}}
+2020/09/09 03:04:37.223 +0000 INFO [JdbcTriggerImpl] [Azkaban] Loaded 1 triggers.
+2020/09/09 03:04:37.234 +0000 INFO [log] [Azkaban] jetty-6.1.26
+2020/09/09 03:04:37.404 +0000 INFO [ProjectManagerServlet] [Azkaban] downloadBufferSize: 8192
+2020/09/09 03:04:37.839 +0000 INFO [RestLiAnnotationReader] [Azkaban] Processed actions resource 'azkaban.restli.ProjectManagerResource'
+2020/09/09 03:04:37.847 +0000 INFO [ExecutionLogsCleaner] [Azkaban] Cleaned up 0 log entries.
+2020/09/09 03:04:37.848 +0000 INFO [ExecutionLogsCleaner] [Azkaban] log clean up time: 1066 ms.
+2020/09/09 03:04:37.866 +0000 INFO [RestLiAnnotationReader] [Azkaban] Processed actions resource 'azkaban.restli.UserManagerResource'
+2020/09/09 03:04:37.891 +0000 INFO [log] [Azkaban] Started SocketConnector@0.0.0.0:8081
+2020/09/09 03:04:37.891 +0000 INFO [AzkabanWebServer] [Azkaban] Server started
+2020/09/09 03:04:38.087 +0000 ERROR [ExecutorManager] [Azkaban] Failed to update ExecutorInfo for executor : b207607e691c:12321 (id: 1), active=true
+java.util.concurrent.ExecutionException: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at azkaban.executor.ExecutorManager.refreshExecutors(ExecutorManager.java:231)
+	at azkaban.executor.ExecutorManager.access$200(ExecutorManager.java:69)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.processQueuedFlows(ExecutorManager.java:1180)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.run(ExecutorManager.java:1148)
+Caused by: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at azkaban.utils.RestfulApiClient.sendAndReturn(RestfulApiClient.java:133)
+	at azkaban.utils.RestfulApiClient.httpPost(RestfulApiClient.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonString(ExecutorApiGateway.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonType(ExecutorApiGateway.java:89)
+	at azkaban.executor.ExecutorManager.lambda$refreshExecutors$0(ExecutorManager.java:219)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020/09/09 03:04:38.101 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:04:38.116 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:04:38.116 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:04:38.116 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:05:26.155 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 114.247.56.224  -  "GET / - HTTP/1.1" browser
+2020/09/09 03:05:26.865 +0000 ERROR [ExecutorManager] [Azkaban] Failed to update ExecutorInfo for executor : b207607e691c:12321 (id: 1), active=true
+java.util.concurrent.ExecutionException: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at azkaban.executor.ExecutorManager.refreshExecutors(ExecutorManager.java:231)
+	at azkaban.executor.ExecutorManager.access$200(ExecutorManager.java:69)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.processQueuedFlows(ExecutorManager.java:1180)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.run(ExecutorManager.java:1148)
+Caused by: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at azkaban.utils.RestfulApiClient.sendAndReturn(RestfulApiClient.java:133)
+	at azkaban.utils.RestfulApiClient.httpPost(RestfulApiClient.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonString(ExecutorApiGateway.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonType(ExecutorApiGateway.java:89)
+	at azkaban.executor.ExecutorManager.lambda$refreshExecutors$0(ExecutorManager.java:219)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020/09/09 03:05:26.907 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:05:26.908 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:05:26.908 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:05:26.909 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:05:49.460 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 219.143.205.49  -  "POST / - HTTP/1.1" browser
+2020/09/09 03:05:49.466 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 219.143.205.49  -  "POST / - HTTP/1.1" browser
+2020/09/09 03:06:13.938 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 219.143.205.49  -  "POST / - HTTP/1.1" browser
+2020/09/09 03:06:13.983 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] Session id created for user 'metrics' and ip 219.143.205.49, 0 session(s) found from this IP
+2020/09/09 03:06:14.005 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 219.143.205.49 metrics "GET / - HTTP/1.1" browser
+2020/09/09 03:06:14.013 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 219.143.205.49 metrics "GET /index - HTTP/1.1" browser
+2020/09/09 03:06:16.744 +0000 ERROR [ExecutorManager] [Azkaban] Failed to update ExecutorInfo for executor : b207607e691c:12321 (id: 1), active=true
+java.util.concurrent.ExecutionException: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at azkaban.executor.ExecutorManager.refreshExecutors(ExecutorManager.java:231)
+	at azkaban.executor.ExecutorManager.access$200(ExecutorManager.java:69)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.processQueuedFlows(ExecutorManager.java:1180)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.run(ExecutorManager.java:1148)
+Caused by: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at azkaban.utils.RestfulApiClient.sendAndReturn(RestfulApiClient.java:133)
+	at azkaban.utils.RestfulApiClient.httpPost(RestfulApiClient.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonString(ExecutorApiGateway.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonType(ExecutorApiGateway.java:89)
+	at azkaban.executor.ExecutorManager.lambda$refreshExecutors$0(ExecutorManager.java:219)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020/09/09 03:06:16.747 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:06:16.748 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:06:16.748 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:06:16.749 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:06:18.807 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 219.143.205.49 metrics "GET /index group HTTP/1.1" browser
+2020/09/09 03:06:19.541 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 219.143.205.49 metrics "GET /index all HTTP/1.1" browser
+2020/09/09 03:06:25.679 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 219.143.205.49 metrics "GET /manager project=az HTTP/1.1" browser
+2020/09/09 03:06:41.957 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 219.143.205.49 metrics "GET /manager project=az948d94ff-eef6-49bc-ade6-736cc3f998ae HTTP/1.1" browser
+2020/09/09 03:06:44.275 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 114.247.56.224 metrics "GET /index logout HTTP/1.1" browser
+2020/09/09 03:06:44.294 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 114.247.56.224  -  "GET / - HTTP/1.1" browser
+2020/09/09 03:06:50.617 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 114.247.56.224  -  "POST / - HTTP/1.1" browser
+2020/09/09 03:06:50.617 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] Session id created for user 'azkaban' and ip 114.247.56.224, 0 session(s) found from this IP
+2020/09/09 03:06:50.646 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 114.247.56.224 azkaban "GET / - HTTP/1.1" browser
+2020/09/09 03:06:50.654 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 114.247.56.224 azkaban "GET /index - HTTP/1.1" browser
+2020/09/09 03:06:54.878 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 114.247.56.224 azkaban "GET /manager project=az HTTP/1.1" browser
+2020/09/09 03:06:57.850 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 114.247.56.224 azkaban "GET /executor project=az&ajax=fetchscheduledflowgraph&flow=datax HTTP/1.1" browser
+2020/09/09 03:06:57.852 +0000 INFO [TriggerBasedScheduleLoader] [Azkaban] loaded schedule for aze11d4903-58a1-4d72-8127-edddaf8ea887 (project_ID: 51)
+2020/09/09 03:06:57.854 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 219.143.205.49 azkaban "GET /executor project=az&ajax=flowInfo&flow=datax HTTP/1.1" browser
+2020/09/09 03:07:00.242 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 114.247.56.224 azkaban "GET /executor projectId=2&project=az&ajax=executeFlow&flow=datax&disabled=%5B%5D&failureEmailsOverride=false&successEmailsOverride=false&failureAction=finishCurrent&failureEmails=&successEmails=&notifyFailureFirst=false&notifyFailureLast=false&concurrentOption=skip HTTP/1.1" browser
+2020/09/09 03:07:00.249 +0000 INFO [ExecutorManager] [Azkaban] Submitting execution flow datax by azkaban
+2020/09/09 03:07:00.251 +0000 ERROR [StdOutErrRedirect] [Azkaban] azkaban.executor.ExecutorManagerException: Flow datax is already running. Skipping execution.
+2020/09/09 03:07:00.251 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at azkaban.executor.ExecutorManager.submitExecutableFlow(ExecutorManager.java:941)
+2020/09/09 03:07:00.251 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at azkaban.webapp.servlet.ExecutorServlet.ajaxExecuteFlow(ExecutorServlet.java:962)
+2020/09/09 03:07:00.252 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at azkaban.webapp.servlet.ExecutorServlet.handleAJAXAction(ExecutorServlet.java:181)
+2020/09/09 03:07:00.252 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at azkaban.webapp.servlet.ExecutorServlet.handleGet(ExecutorServlet.java:97)
+2020/09/09 03:07:00.252 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at azkaban.webapp.servlet.LoginAbstractAzkabanServlet.doGet(LoginAbstractAzkabanServlet.java:122)
+2020/09/09 03:07:00.252 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+2020/09/09 03:07:00.252 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+2020/09/09 03:07:00.252 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+2020/09/09 03:07:00.252 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+2020/09/09 03:07:00.252 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+2020/09/09 03:07:00.252 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+2020/09/09 03:07:00.252 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+2020/09/09 03:07:00.252 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at org.mortbay.jetty.Server.handle(Server.java:326)
+2020/09/09 03:07:00.252 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+2020/09/09 03:07:00.252 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+2020/09/09 03:07:00.252 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+2020/09/09 03:07:00.252 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+2020/09/09 03:07:00.252 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+2020/09/09 03:07:00.253 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:228)
+2020/09/09 03:07:00.253 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+2020/09/09 03:07:06.530 +0000 ERROR [ExecutorManager] [Azkaban] Failed to update ExecutorInfo for executor : b207607e691c:12321 (id: 1), active=true
+java.util.concurrent.ExecutionException: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at azkaban.executor.ExecutorManager.refreshExecutors(ExecutorManager.java:231)
+	at azkaban.executor.ExecutorManager.access$200(ExecutorManager.java:69)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.processQueuedFlows(ExecutorManager.java:1180)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.run(ExecutorManager.java:1148)
+Caused by: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at azkaban.utils.RestfulApiClient.sendAndReturn(RestfulApiClient.java:133)
+	at azkaban.utils.RestfulApiClient.httpPost(RestfulApiClient.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonString(ExecutorApiGateway.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonType(ExecutorApiGateway.java:89)
+	at azkaban.executor.ExecutorManager.lambda$refreshExecutors$0(ExecutorManager.java:219)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020/09/09 03:07:06.532 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:07:06.532 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:07:06.532 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:07:06.533 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:07:07.981 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 114.247.56.224 azkaban "GET /manager project=az&flow=datax HTTP/1.1" browser
+2020/09/09 03:07:08.146 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 114.247.56.224 azkaban "GET /manager ajax=fetchflowdetails&project=az&flow=datax HTTP/1.1" browser
+2020/09/09 03:07:08.149 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 219.143.205.49 azkaban "GET /schedule ajax=fetchSchedule&projectId=2&flowId=datax HTTP/1.1" browser
+2020/09/09 03:07:08.152 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 219.143.205.49 azkaban "GET /flowtrigger ajax=fetchTrigger&projectId=2&flowId=datax HTTP/1.1" browser
+2020/09/09 03:07:08.152 +0000 ERROR [FlowTriggerScheduler] [Azkaban] Unable to get scheduled flow triggers
+java.lang.NullPointerException
+	at azkaban.flowtrigger.quartz.FlowTriggerScheduler.getScheduledFlowTriggerJobs(FlowTriggerScheduler.java:141)
+	at azkaban.webapp.servlet.FlowTriggerServlet.ajaxFetchTrigger(FlowTriggerServlet.java:69)
+	at azkaban.webapp.servlet.FlowTriggerServlet.handleAJAXAction(FlowTriggerServlet.java:112)
+	at azkaban.webapp.servlet.FlowTriggerServlet.handleGet(FlowTriggerServlet.java:59)
+	at azkaban.webapp.servlet.LoginAbstractAzkabanServlet.doGet(LoginAbstractAzkabanServlet.java:122)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:228)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+2020/09/09 03:07:08.154 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 219.143.205.49 azkaban "GET /manager project=az&ajax=fetchflowgraph&flow=datax HTTP/1.1" browser
+2020/09/09 03:07:14.502 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 114.247.56.224 azkaban "GET /manager project=az&flow=datax&ajax=fetchFlowExecutions&start=0&length=16 HTTP/1.1" browser
+2020/09/09 03:07:18.464 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 219.143.205.49 azkaban "GET /flowtriggerinstance project=az&flow=datax&ajax=fetchTriggerInstances&start=0&length=16 HTTP/1.1" browser
+2020/09/09 03:07:19.737 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 219.143.205.49 azkaban "GET /manager ajax=fetchLastSuccessfulFlowExecution&project=az&flow=datax HTTP/1.1" browser
+2020/09/09 03:07:26.489 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 219.143.205.49 azkaban "GET /executor project=az&ajax=fetchscheduledflowgraph&flow=datax HTTP/1.1" browser
+2020/09/09 03:07:26.492 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 114.247.56.224 azkaban "GET /executor project=az&ajax=flowInfo&flow=datax HTTP/1.1" browser
+2020/09/09 03:07:32.347 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 114.247.56.224 azkaban "GET /executor projectId=2&project=az&ajax=executeFlow&flow=datax&disabled=%5B%5D&failureEmailsOverride=false&successEmailsOverride=false&failureAction=finishCurrent&failureEmails=&successEmails=&notifyFailureFirst=false&notifyFailureLast=false&concurrentOption=skip HTTP/1.1" browser
+2020/09/09 03:07:32.347 +0000 INFO [ExecutorManager] [Azkaban] Submitting execution flow datax by azkaban
+2020/09/09 03:07:32.348 +0000 ERROR [StdOutErrRedirect] [Azkaban] azkaban.executor.ExecutorManagerException: Flow datax is already running. Skipping execution.
+2020/09/09 03:07:32.348 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at azkaban.executor.ExecutorManager.submitExecutableFlow(ExecutorManager.java:941)
+2020/09/09 03:07:32.348 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at azkaban.webapp.servlet.ExecutorServlet.ajaxExecuteFlow(ExecutorServlet.java:962)
+2020/09/09 03:07:32.348 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at azkaban.webapp.servlet.ExecutorServlet.handleAJAXAction(ExecutorServlet.java:181)
+2020/09/09 03:07:32.348 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at azkaban.webapp.servlet.ExecutorServlet.handleGet(ExecutorServlet.java:97)
+2020/09/09 03:07:32.348 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at azkaban.webapp.servlet.LoginAbstractAzkabanServlet.doGet(LoginAbstractAzkabanServlet.java:122)
+2020/09/09 03:07:32.348 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+2020/09/09 03:07:32.349 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+2020/09/09 03:07:32.349 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+2020/09/09 03:07:32.349 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+2020/09/09 03:07:32.349 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+2020/09/09 03:07:32.349 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+2020/09/09 03:07:32.349 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+2020/09/09 03:07:32.349 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at org.mortbay.jetty.Server.handle(Server.java:326)
+2020/09/09 03:07:32.349 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+2020/09/09 03:07:32.349 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+2020/09/09 03:07:32.349 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+2020/09/09 03:07:32.349 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+2020/09/09 03:07:32.349 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+2020/09/09 03:07:32.349 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:228)
+2020/09/09 03:07:32.349 +0000 ERROR [StdOutErrRedirect] [Azkaban] 	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+2020/09/09 03:08:04.871 +0000 ERROR [ExecutorManager] [Azkaban] Failed to update ExecutorInfo for executor : b207607e691c:12321 (id: 1), active=true
+java.util.concurrent.ExecutionException: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at azkaban.executor.ExecutorManager.refreshExecutors(ExecutorManager.java:231)
+	at azkaban.executor.ExecutorManager.access$200(ExecutorManager.java:69)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.processQueuedFlows(ExecutorManager.java:1180)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.run(ExecutorManager.java:1148)
+Caused by: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at azkaban.utils.RestfulApiClient.sendAndReturn(RestfulApiClient.java:133)
+	at azkaban.utils.RestfulApiClient.httpPost(RestfulApiClient.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonString(ExecutorApiGateway.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonType(ExecutorApiGateway.java:89)
+	at azkaban.executor.ExecutorManager.lambda$refreshExecutors$0(ExecutorManager.java:219)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020/09/09 03:08:13.078 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:08:13.102 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:08:13.102 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:08:13.103 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:08:46.708 +0000 ERROR [ExecutorManager] [Azkaban] Failed to update ExecutorInfo for executor : b207607e691c:12321 (id: 1), active=true
+java.util.concurrent.ExecutionException: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at azkaban.executor.ExecutorManager.refreshExecutors(ExecutorManager.java:231)
+	at azkaban.executor.ExecutorManager.access$200(ExecutorManager.java:69)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.processQueuedFlows(ExecutorManager.java:1180)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.run(ExecutorManager.java:1148)
+Caused by: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at azkaban.utils.RestfulApiClient.sendAndReturn(RestfulApiClient.java:133)
+	at azkaban.utils.RestfulApiClient.httpPost(RestfulApiClient.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonString(ExecutorApiGateway.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonType(ExecutorApiGateway.java:89)
+	at azkaban.executor.ExecutorManager.lambda$refreshExecutors$0(ExecutorManager.java:219)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020/09/09 03:08:46.715 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:08:46.716 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:08:46.716 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:08:46.716 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:09:38.446 +0000 ERROR [ExecutorManager] [Azkaban] Failed to update ExecutorInfo for executor : b207607e691c:12321 (id: 1), active=true
+java.util.concurrent.ExecutionException: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at azkaban.executor.ExecutorManager.refreshExecutors(ExecutorManager.java:231)
+	at azkaban.executor.ExecutorManager.access$200(ExecutorManager.java:69)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.processQueuedFlows(ExecutorManager.java:1180)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.run(ExecutorManager.java:1148)
+Caused by: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at azkaban.utils.RestfulApiClient.sendAndReturn(RestfulApiClient.java:133)
+	at azkaban.utils.RestfulApiClient.httpPost(RestfulApiClient.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonString(ExecutorApiGateway.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonType(ExecutorApiGateway.java:89)
+	at azkaban.executor.ExecutorManager.lambda$refreshExecutors$0(ExecutorManager.java:219)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020/09/09 03:09:38.579 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:09:38.580 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:09:38.580 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:09:38.580 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:09:52.384 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 114.247.56.224 azkaban "GET /index - HTTP/1.1" browser
+2020/09/09 03:09:58.183 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 114.247.56.224 azkaban "GET /manager project=aze11d4903-58a1-4d72-8127-edddaf8ea887 HTTP/1.1" browser
+2020/09/09 03:10:03.975 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 114.247.56.224 azkaban "GET /manager project=aze11d4903-58a1-4d72-8127-edddaf8ea887&flow=jsonDownload HTTP/1.1" browser
+2020/09/09 03:10:04.100 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 114.247.56.224 azkaban "GET /manager ajax=fetchflowdetails&project=aze11d4903-58a1-4d72-8127-edddaf8ea887&flow=jsonDownload HTTP/1.1" browser
+2020/09/09 03:10:04.103 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 219.143.205.49 azkaban "GET /schedule ajax=fetchSchedule&projectId=51&flowId=jsonDownload HTTP/1.1" browser
+2020/09/09 03:10:04.103 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 219.143.205.49 azkaban "GET /flowtrigger ajax=fetchTrigger&projectId=51&flowId=jsonDownload HTTP/1.1" browser
+2020/09/09 03:10:04.104 +0000 ERROR [FlowTriggerScheduler] [Azkaban] Unable to get scheduled flow triggers
+java.lang.NullPointerException
+	at azkaban.flowtrigger.quartz.FlowTriggerScheduler.getScheduledFlowTriggerJobs(FlowTriggerScheduler.java:141)
+	at azkaban.webapp.servlet.FlowTriggerServlet.ajaxFetchTrigger(FlowTriggerServlet.java:69)
+	at azkaban.webapp.servlet.FlowTriggerServlet.handleAJAXAction(FlowTriggerServlet.java:112)
+	at azkaban.webapp.servlet.FlowTriggerServlet.handleGet(FlowTriggerServlet.java:59)
+	at azkaban.webapp.servlet.LoginAbstractAzkabanServlet.doGet(LoginAbstractAzkabanServlet.java:122)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:228)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+2020/09/09 03:10:04.104 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 219.143.205.49 azkaban "GET /manager project=aze11d4903-58a1-4d72-8127-edddaf8ea887&ajax=fetchflowgraph&flow=jsonDownload HTTP/1.1" browser
+2020/09/09 03:10:04.161 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 219.143.205.49 azkaban "GET /schedule scheduleId=2&ajax=slaInfo HTTP/1.1" browser
+2020/09/09 03:10:21.898 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 219.143.205.49 azkaban "GET /manager project=az948d94ff-eef6-49bc-ade6-736cc3f998ae HTTP/1.1" browser
+2020/09/09 03:10:24.206 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 219.143.205.49 azkaban "GET /manager project=az948d94ff-eef6-49bc-ade6-736cc3f998ae&flow=datax HTTP/1.1" browser
+2020/09/09 03:10:24.309 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 219.143.205.49 azkaban "GET /manager ajax=fetchflowdetails&project=az948d94ff-eef6-49bc-ade6-736cc3f998ae&flow=datax HTTP/1.1" browser
+2020/09/09 03:10:24.309 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 114.247.56.224 azkaban "GET /flowtrigger ajax=fetchTrigger&projectId=45&flowId=datax HTTP/1.1" browser
+2020/09/09 03:10:24.310 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 219.143.205.49 azkaban "GET /schedule ajax=fetchSchedule&projectId=45&flowId=datax HTTP/1.1" browser
+2020/09/09 03:10:24.310 +0000 ERROR [FlowTriggerScheduler] [Azkaban] Unable to get scheduled flow triggers
+java.lang.NullPointerException
+	at azkaban.flowtrigger.quartz.FlowTriggerScheduler.getScheduledFlowTriggerJobs(FlowTriggerScheduler.java:141)
+	at azkaban.webapp.servlet.FlowTriggerServlet.ajaxFetchTrigger(FlowTriggerServlet.java:69)
+	at azkaban.webapp.servlet.FlowTriggerServlet.handleAJAXAction(FlowTriggerServlet.java:112)
+	at azkaban.webapp.servlet.FlowTriggerServlet.handleGet(FlowTriggerServlet.java:59)
+	at azkaban.webapp.servlet.LoginAbstractAzkabanServlet.doGet(LoginAbstractAzkabanServlet.java:122)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:228)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+2020/09/09 03:10:24.313 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 219.143.205.49 azkaban "GET /manager project=az948d94ff-eef6-49bc-ade6-736cc3f998ae&ajax=fetchflowgraph&flow=datax HTTP/1.1" browser
+2020/09/09 03:10:28.072 +0000 ERROR [ExecutorManager] [Azkaban] Failed to update ExecutorInfo for executor : b207607e691c:12321 (id: 1), active=true
+java.util.concurrent.ExecutionException: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at azkaban.executor.ExecutorManager.refreshExecutors(ExecutorManager.java:231)
+	at azkaban.executor.ExecutorManager.access$200(ExecutorManager.java:69)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.processQueuedFlows(ExecutorManager.java:1180)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.run(ExecutorManager.java:1148)
+Caused by: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at azkaban.utils.RestfulApiClient.sendAndReturn(RestfulApiClient.java:133)
+	at azkaban.utils.RestfulApiClient.httpPost(RestfulApiClient.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonString(ExecutorApiGateway.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonType(ExecutorApiGateway.java:89)
+	at azkaban.executor.ExecutorManager.lambda$refreshExecutors$0(ExecutorManager.java:219)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020/09/09 03:10:28.073 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:10:28.073 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:10:28.075 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:10:28.076 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:10:46.012 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 219.143.205.49 azkaban "GET /flowtriggerinstance project=az948d94ff-eef6-49bc-ade6-736cc3f998ae&flow=datax&ajax=fetchTriggerInstances&start=0&length=16 HTTP/1.1" browser
+2020/09/09 03:10:46.913 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 219.143.205.49 azkaban "GET /manager project=az948d94ff-eef6-49bc-ade6-736cc3f998ae&flow=datax&ajax=fetchFlowExecutions&start=0&length=16 HTTP/1.1" browser
+2020/09/09 03:11:18.166 +0000 ERROR [ExecutorManager] [Azkaban] Failed to update ExecutorInfo for executor : b207607e691c:12321 (id: 1), active=true
+java.util.concurrent.ExecutionException: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at azkaban.executor.ExecutorManager.refreshExecutors(ExecutorManager.java:231)
+	at azkaban.executor.ExecutorManager.access$200(ExecutorManager.java:69)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.processQueuedFlows(ExecutorManager.java:1180)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.run(ExecutorManager.java:1148)
+Caused by: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at azkaban.utils.RestfulApiClient.sendAndReturn(RestfulApiClient.java:133)
+	at azkaban.utils.RestfulApiClient.httpPost(RestfulApiClient.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonString(ExecutorApiGateway.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonType(ExecutorApiGateway.java:89)
+	at azkaban.executor.ExecutorManager.lambda$refreshExecutors$0(ExecutorManager.java:219)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020/09/09 03:11:18.173 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:11:18.174 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:11:18.174 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:11:18.174 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:12:08.096 +0000 ERROR [ExecutorManager] [Azkaban] Failed to update ExecutorInfo for executor : b207607e691c:12321 (id: 1), active=true
+java.util.concurrent.ExecutionException: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at azkaban.executor.ExecutorManager.refreshExecutors(ExecutorManager.java:231)
+	at azkaban.executor.ExecutorManager.access$200(ExecutorManager.java:69)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.processQueuedFlows(ExecutorManager.java:1180)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.run(ExecutorManager.java:1148)
+Caused by: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at azkaban.utils.RestfulApiClient.sendAndReturn(RestfulApiClient.java:133)
+	at azkaban.utils.RestfulApiClient.httpPost(RestfulApiClient.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonString(ExecutorApiGateway.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonType(ExecutorApiGateway.java:89)
+	at azkaban.executor.ExecutorManager.lambda$refreshExecutors$0(ExecutorManager.java:219)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020/09/09 03:12:08.119 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:12:08.119 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:12:08.119 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:12:08.120 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:12:58.156 +0000 ERROR [ExecutorManager] [Azkaban] Failed to update ExecutorInfo for executor : b207607e691c:12321 (id: 1), active=true
+java.util.concurrent.ExecutionException: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at azkaban.executor.ExecutorManager.refreshExecutors(ExecutorManager.java:231)
+	at azkaban.executor.ExecutorManager.access$200(ExecutorManager.java:69)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.processQueuedFlows(ExecutorManager.java:1180)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.run(ExecutorManager.java:1148)
+Caused by: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at azkaban.utils.RestfulApiClient.sendAndReturn(RestfulApiClient.java:133)
+	at azkaban.utils.RestfulApiClient.httpPost(RestfulApiClient.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonString(ExecutorApiGateway.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonType(ExecutorApiGateway.java:89)
+	at azkaban.executor.ExecutorManager.lambda$refreshExecutors$0(ExecutorManager.java:219)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020/09/09 03:12:58.174 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:12:58.174 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:12:58.174 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:12:58.175 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:13:48.071 +0000 ERROR [ExecutorManager] [Azkaban] Failed to update ExecutorInfo for executor : b207607e691c:12321 (id: 1), active=true
+java.util.concurrent.ExecutionException: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at azkaban.executor.ExecutorManager.refreshExecutors(ExecutorManager.java:231)
+	at azkaban.executor.ExecutorManager.access$200(ExecutorManager.java:69)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.processQueuedFlows(ExecutorManager.java:1180)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.run(ExecutorManager.java:1148)
+Caused by: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at azkaban.utils.RestfulApiClient.sendAndReturn(RestfulApiClient.java:133)
+	at azkaban.utils.RestfulApiClient.httpPost(RestfulApiClient.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonString(ExecutorApiGateway.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonType(ExecutorApiGateway.java:89)
+	at azkaban.executor.ExecutorManager.lambda$refreshExecutors$0(ExecutorManager.java:219)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020/09/09 03:13:48.083 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:13:48.083 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:13:48.083 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:13:48.084 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:14:38.101 +0000 ERROR [ExecutorManager] [Azkaban] Failed to update ExecutorInfo for executor : b207607e691c:12321 (id: 1), active=true
+java.util.concurrent.ExecutionException: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at azkaban.executor.ExecutorManager.refreshExecutors(ExecutorManager.java:231)
+	at azkaban.executor.ExecutorManager.access$200(ExecutorManager.java:69)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.processQueuedFlows(ExecutorManager.java:1180)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.run(ExecutorManager.java:1148)
+Caused by: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at azkaban.utils.RestfulApiClient.sendAndReturn(RestfulApiClient.java:133)
+	at azkaban.utils.RestfulApiClient.httpPost(RestfulApiClient.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonString(ExecutorApiGateway.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonType(ExecutorApiGateway.java:89)
+	at azkaban.executor.ExecutorManager.lambda$refreshExecutors$0(ExecutorManager.java:219)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020/09/09 03:14:38.103 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:14:38.104 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:14:38.104 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:14:38.109 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:15:28.131 +0000 ERROR [ExecutorManager] [Azkaban] Failed to update ExecutorInfo for executor : b207607e691c:12321 (id: 1), active=true
+java.util.concurrent.ExecutionException: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at azkaban.executor.ExecutorManager.refreshExecutors(ExecutorManager.java:231)
+	at azkaban.executor.ExecutorManager.access$200(ExecutorManager.java:69)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.processQueuedFlows(ExecutorManager.java:1180)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.run(ExecutorManager.java:1148)
+Caused by: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at azkaban.utils.RestfulApiClient.sendAndReturn(RestfulApiClient.java:133)
+	at azkaban.utils.RestfulApiClient.httpPost(RestfulApiClient.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonString(ExecutorApiGateway.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonType(ExecutorApiGateway.java:89)
+	at azkaban.executor.ExecutorManager.lambda$refreshExecutors$0(ExecutorManager.java:219)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020/09/09 03:15:28.141 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:15:28.141 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:15:28.141 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:15:28.142 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:16:18.138 +0000 ERROR [ExecutorManager] [Azkaban] Failed to update ExecutorInfo for executor : b207607e691c:12321 (id: 1), active=true
+java.util.concurrent.ExecutionException: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at azkaban.executor.ExecutorManager.refreshExecutors(ExecutorManager.java:231)
+	at azkaban.executor.ExecutorManager.access$200(ExecutorManager.java:69)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.processQueuedFlows(ExecutorManager.java:1180)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.run(ExecutorManager.java:1148)
+Caused by: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at azkaban.utils.RestfulApiClient.sendAndReturn(RestfulApiClient.java:133)
+	at azkaban.utils.RestfulApiClient.httpPost(RestfulApiClient.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonString(ExecutorApiGateway.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonType(ExecutorApiGateway.java:89)
+	at azkaban.executor.ExecutorManager.lambda$refreshExecutors$0(ExecutorManager.java:219)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020/09/09 03:16:18.155 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:16:18.155 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:16:18.155 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:16:18.156 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:17:09.248 +0000 ERROR [ExecutorManager] [Azkaban] Failed to update ExecutorInfo for executor : b207607e691c:12321 (id: 1), active=true
+java.util.concurrent.ExecutionException: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at azkaban.executor.ExecutorManager.refreshExecutors(ExecutorManager.java:231)
+	at azkaban.executor.ExecutorManager.access$200(ExecutorManager.java:69)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.processQueuedFlows(ExecutorManager.java:1180)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.run(ExecutorManager.java:1148)
+Caused by: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at azkaban.utils.RestfulApiClient.sendAndReturn(RestfulApiClient.java:133)
+	at azkaban.utils.RestfulApiClient.httpPost(RestfulApiClient.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonString(ExecutorApiGateway.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonType(ExecutorApiGateway.java:89)
+	at azkaban.executor.ExecutorManager.lambda$refreshExecutors$0(ExecutorManager.java:219)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020/09/09 03:17:09.267 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:17:09.267 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:17:09.267 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:17:09.268 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:17:58.485 +0000 ERROR [ExecutorManager] [Azkaban] Failed to update ExecutorInfo for executor : b207607e691c:12321 (id: 1), active=true
+java.util.concurrent.ExecutionException: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at azkaban.executor.ExecutorManager.refreshExecutors(ExecutorManager.java:231)
+	at azkaban.executor.ExecutorManager.access$200(ExecutorManager.java:69)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.processQueuedFlows(ExecutorManager.java:1180)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.run(ExecutorManager.java:1148)
+Caused by: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at azkaban.utils.RestfulApiClient.sendAndReturn(RestfulApiClient.java:133)
+	at azkaban.utils.RestfulApiClient.httpPost(RestfulApiClient.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonString(ExecutorApiGateway.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonType(ExecutorApiGateway.java:89)
+	at azkaban.executor.ExecutorManager.lambda$refreshExecutors$0(ExecutorManager.java:219)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020/09/09 03:17:58.500 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:17:58.500 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:17:58.500 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:17:58.501 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:18:48.466 +0000 ERROR [ExecutorManager] [Azkaban] Failed to update ExecutorInfo for executor : b207607e691c:12321 (id: 1), active=true
+java.util.concurrent.ExecutionException: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at azkaban.executor.ExecutorManager.refreshExecutors(ExecutorManager.java:231)
+	at azkaban.executor.ExecutorManager.access$200(ExecutorManager.java:69)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.processQueuedFlows(ExecutorManager.java:1180)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.run(ExecutorManager.java:1148)
+Caused by: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at azkaban.utils.RestfulApiClient.sendAndReturn(RestfulApiClient.java:133)
+	at azkaban.utils.RestfulApiClient.httpPost(RestfulApiClient.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonString(ExecutorApiGateway.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonType(ExecutorApiGateway.java:89)
+	at azkaban.executor.ExecutorManager.lambda$refreshExecutors$0(ExecutorManager.java:219)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020/09/09 03:18:48.476 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:18:48.477 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:18:48.477 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:18:48.477 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:19:38.471 +0000 ERROR [ExecutorManager] [Azkaban] Failed to update ExecutorInfo for executor : b207607e691c:12321 (id: 1), active=true
+java.util.concurrent.ExecutionException: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at azkaban.executor.ExecutorManager.refreshExecutors(ExecutorManager.java:231)
+	at azkaban.executor.ExecutorManager.access$200(ExecutorManager.java:69)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.processQueuedFlows(ExecutorManager.java:1180)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.run(ExecutorManager.java:1148)
+Caused by: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at azkaban.utils.RestfulApiClient.sendAndReturn(RestfulApiClient.java:133)
+	at azkaban.utils.RestfulApiClient.httpPost(RestfulApiClient.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonString(ExecutorApiGateway.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonType(ExecutorApiGateway.java:89)
+	at azkaban.executor.ExecutorManager.lambda$refreshExecutors$0(ExecutorManager.java:219)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020/09/09 03:19:38.478 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:19:38.478 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:19:38.478 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:19:38.479 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:20:28.722 +0000 ERROR [ExecutorManager] [Azkaban] Failed to update ExecutorInfo for executor : b207607e691c:12321 (id: 1), active=true
+java.util.concurrent.ExecutionException: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at azkaban.executor.ExecutorManager.refreshExecutors(ExecutorManager.java:231)
+	at azkaban.executor.ExecutorManager.access$200(ExecutorManager.java:69)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.processQueuedFlows(ExecutorManager.java:1180)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.run(ExecutorManager.java:1148)
+Caused by: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at azkaban.utils.RestfulApiClient.sendAndReturn(RestfulApiClient.java:133)
+	at azkaban.utils.RestfulApiClient.httpPost(RestfulApiClient.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonString(ExecutorApiGateway.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonType(ExecutorApiGateway.java:89)
+	at azkaban.executor.ExecutorManager.lambda$refreshExecutors$0(ExecutorManager.java:219)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020/09/09 03:20:28.741 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:20:28.741 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:20:28.741 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:20:28.741 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:21:18.611 +0000 ERROR [ExecutorManager] [Azkaban] Failed to update ExecutorInfo for executor : b207607e691c:12321 (id: 1), active=true
+java.util.concurrent.ExecutionException: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at azkaban.executor.ExecutorManager.refreshExecutors(ExecutorManager.java:231)
+	at azkaban.executor.ExecutorManager.access$200(ExecutorManager.java:69)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.processQueuedFlows(ExecutorManager.java:1180)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.run(ExecutorManager.java:1148)
+Caused by: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at azkaban.utils.RestfulApiClient.sendAndReturn(RestfulApiClient.java:133)
+	at azkaban.utils.RestfulApiClient.httpPost(RestfulApiClient.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonString(ExecutorApiGateway.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonType(ExecutorApiGateway.java:89)
+	at azkaban.executor.ExecutorManager.lambda$refreshExecutors$0(ExecutorManager.java:219)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020/09/09 03:21:18.617 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:21:18.617 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:21:18.617 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:21:18.618 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:22:08.530 +0000 ERROR [ExecutorManager] [Azkaban] Failed to update ExecutorInfo for executor : b207607e691c:12321 (id: 1), active=true
+java.util.concurrent.ExecutionException: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at azkaban.executor.ExecutorManager.refreshExecutors(ExecutorManager.java:231)
+	at azkaban.executor.ExecutorManager.access$200(ExecutorManager.java:69)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.processQueuedFlows(ExecutorManager.java:1180)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.run(ExecutorManager.java:1148)
+Caused by: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at azkaban.utils.RestfulApiClient.sendAndReturn(RestfulApiClient.java:133)
+	at azkaban.utils.RestfulApiClient.httpPost(RestfulApiClient.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonString(ExecutorApiGateway.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonType(ExecutorApiGateway.java:89)
+	at azkaban.executor.ExecutorManager.lambda$refreshExecutors$0(ExecutorManager.java:219)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020/09/09 03:22:08.546 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:22:08.546 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:22:08.546 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:22:08.546 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:22:58.969 +0000 ERROR [ExecutorManager] [Azkaban] Failed to update ExecutorInfo for executor : b207607e691c:12321 (id: 1), active=true
+java.util.concurrent.ExecutionException: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at azkaban.executor.ExecutorManager.refreshExecutors(ExecutorManager.java:231)
+	at azkaban.executor.ExecutorManager.access$200(ExecutorManager.java:69)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.processQueuedFlows(ExecutorManager.java:1180)
+	at azkaban.executor.ExecutorManager$QueueProcessorThread.run(ExecutorManager.java:1148)
+Caused by: java.net.UnknownHostException: b207607e691c: Name does not resolve
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at azkaban.utils.RestfulApiClient.sendAndReturn(RestfulApiClient.java:133)
+	at azkaban.utils.RestfulApiClient.httpPost(RestfulApiClient.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonString(ExecutorApiGateway.java:125)
+	at azkaban.executor.ExecutorApiGateway.callForJsonType(ExecutorApiGateway.java:89)
+	at azkaban.executor.ExecutorManager.lambda$refreshExecutors$0(ExecutorManager.java:219)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020/09/09 03:22:59.085 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:22:59.086 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0
+2020/09/09 03:22:59.086 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :41
+2020/09/09 03:22:59.086 +0000 INFO [ExecutorManager] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 41 with error count 0

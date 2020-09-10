@@ -1,0 +1,60 @@
+version: '3'
+services:
+ mysql:
+  container_name: "mysql"
+  image: mysql:5.6
+  restart: always
+  environment:
+    MYSQL_ROOT_PASSWORD: "Root@123"
+  volumes:
+  - ./mysql/data:/var/lib/mysql
+  - ./mysql/conf:/etc/mysql
+  ports:
+  - "3306:3306"
+  networks:
+  - gbdp
+
+ executor:
+    image: hhx7/azkaban-executor
+    container_name:   executor
+    hostname: executor
+    restart: always
+    ports:
+      - "12321:12321"
+        # depends_on:
+        #   - mysql
+        # command: /app/bin/start-exec.sh
+    volumes:
+      #- ./azkaban/azkaban-executor/bin:/app/bin
+      - ./azkaban-executor/conf:/app/conf
+      - ./azkaban-executor/log:/app/log
+      - ./azkaban-executor/test:/app/test
+    links:
+      - mysql
+    networks:
+      - gbdp
+
+ webserver:
+      image: hhx7/azkaban-webserver
+      container_name: webserver
+      hostname: webserver
+      restart: always
+      depends_on:
+        # - mysql
+        - executor
+      ports:
+          - "8099:8081"
+      # command: /app/bin/start-web.sh
+      volumes:
+          #- ./azkaban/azkaban-webserver/bin:/app/bin
+          - ./azkaban-webserver/conf:/app/conf
+          - ./azkaban-webserver/log:/app/log
+      links:
+          - executor
+          - mysql
+      networks:
+          - gbdp
+          
+networks:
+  gbdp:
+    driver: bridge

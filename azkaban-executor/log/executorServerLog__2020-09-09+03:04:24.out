@@ -1,0 +1,72 @@
+Error: HADOOP_HOME is not set. Hadoop job types will not run properly.
+bin/internal/../..
+:bin/internal/../../lib/activation-1.1.jar:bin/internal/../../lib/aopalliance-1.0.jar:bin/internal/../../lib/az-core-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/az-hadoop-jobtype-plugin-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/azkaban-common-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/azkaban-db-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/azkaban-exec-server-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/azkaban-hadoop-security-plugin-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/azkaban-spi-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/c3p0-0.9.1.1.jar:bin/internal/../../lib/cached-http-filesystem-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/commons-codec-1.13.jar:bin/internal/../../lib/commons-collections-3.2.2.jar:bin/internal/../../lib/commons-dbcp2-2.7.0.jar:bin/internal/../../lib/commons-dbutils-1.5.jar:bin/internal/../../lib/commons-fileupload-1.2.1.jar:bin/internal/../../lib/commons-io-2.4.jar:bin/internal/../../lib/commons-jexl-2.1.1.jar:bin/internal/../../lib/commons-lang-2.6.jar:bin/internal/../../lib/commons-logging-1.2.jar:bin/internal/../../lib/commons-math3-3.0.jar:bin/internal/../../lib/commons-pool2-2.7.0.jar:bin/internal/../../lib/gson-2.8.1.jar:bin/internal/../../lib/guava-21.0.jar:bin/internal/../../lib/guice-4.1.0.jar:bin/internal/../../lib/httpclient-4.5.3.jar:bin/internal/../../lib/httpcore-4.4.6.jar:bin/internal/../../lib/jackson-core-asl-1.9.5.jar:bin/internal/../../lib/jackson-mapper-asl-1.9.5.jar:bin/internal/../../lib/javax.inject-1.jar:bin/internal/../../lib/jetty-6.1.26.jar:bin/internal/../../lib/jetty-util-6.1.26.jar:bin/internal/../../lib/joda-time-2.0.jar:bin/internal/../../lib/jopt-simple-4.3.jar:bin/internal/../../lib/jsr305-3.0.2.jar:bin/internal/../../lib/kafka-clients-0.10.0.0.jar:bin/internal/../../lib/kafka-log4j-appender-0.10.0.0.jar:bin/internal/../../lib/log4j-1.2.17.jar:bin/internal/../../lib/lz4-1.3.0.jar:bin/internal/../../lib/mail-1.4.5.jar:bin/internal/../../lib/metrics-core-3.1.0.jar:bin/internal/../../lib/metrics-jvm-3.1.0.jar:bin/internal/../../lib/mysql-connector-java-5.1.28.jar:bin/internal/../../lib/quartz-2.2.1.jar:bin/internal/../../lib/servlet-api-2.5-20081211.jar:bin/internal/../../lib/slf4j-api-1.7.21.jar:bin/internal/../../lib/slf4j-log4j12-1.7.21.jar:bin/internal/../../lib/snakeyaml-1.18.jar:bin/internal/../../lib/snappy-java-1.1.2.4.jar:bin/internal/../../lib/velocity-1.7.jar:bin/internal/../../extlib/*.jar:bin/internal/../../plugins/*/*.jar
+Starting AzkabanExecutorServer on port 12321  ...
+2020/09/09 03:04:27.600 +0000 INFO [AzkabanExecutorServer] [Azkaban] Starting Jetty Azkaban Executor...
+2020/09/09 03:04:27.691 +0000 INFO [AzkabanServer] [Azkaban] Loading azkaban settings file from bin/internal/../../conf
+2020/09/09 03:04:27.692 +0000 INFO [AzkabanServer] [Azkaban] Loading azkaban properties file
+2020/09/09 03:04:30.182 +0000 INFO [JdbcProjectImpl] [Azkaban] project temporary folder is being constructed.
+2020/09/09 03:04:30.183 +0000 WARN [StorageCleaner] [Azkaban] Project cleanup disabled. All artifacts will be stored.
+2020/09/09 03:04:30.205 +0000 INFO [AzkabanExecServerModule] [Azkaban] Event reporter is not enabled
+2020/09/09 03:04:30.206 +0000 INFO [FlowRunnerManager] [Azkaban] Creating subprocess to run shell command: chmod g+s executions
+2020/09/09 03:04:30.250 +0000 INFO [FlowRunnerManager] [Azkaban] useNewThreadPool: false
+2020/09/09 03:04:30.254 +0000 INFO [JobTypeManager] [Azkaban] Loading plugin default job types
+2020/09/09 03:04:30.266 +0000 INFO [JobTypeManager] [Azkaban] Job type plugin directory set. Loading extra job types from plugins/jobtypes
+2020/09/09 03:04:30.277 +0000 INFO [JobTypeManager] [Azkaban] Common plugin job props file plugins/jobtypes/common.properties not found. Using only globals props
+2020/09/09 03:04:30.277 +0000 INFO [JobTypeManager] [Azkaban] Common plugin load props file plugins/jobtypes/commonprivate.properties found. Attempt to load.
+2020/09/09 03:04:30.306 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/09 03:04:30.306 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/09 03:04:30.316 +0000 INFO [log] [Azkaban] Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2020/09/09 03:04:30.319 +0000 INFO [ExecJettyServerModule] [Azkaban] Setting up connector with stats on: true
+2020/09/09 03:04:30.319 +0000 INFO [ExecJettyServerModule] [Azkaban] Jetty connector name: 0.0.0.0:12321, default header buffer size: 4096
+2020/09/09 03:04:30.320 +0000 INFO [ExecJettyServerModule] [Azkaban] Jetty connector name: 0.0.0.0:12321, (if) new header buffer size: 4096
+2020/09/09 03:04:30.407 +0000 INFO [JmxJobMBeanManager] [Azkaban] Initializing azkaban.execapp.jmx.JmxJobMBeanManager
+2020/09/09 03:04:30.408 +0000 INFO [AzkabanExecutorServer] [Azkaban] Job callback enabled? true
+2020/09/09 03:04:30.410 +0000 INFO [JobCallbackManager] [Azkaban] Initializing
+2020/09/09 03:04:30.413 +0000 INFO [JobCallbackRequestMaker] [Azkaban] responseWaitTimeoutMS: 5000
+2020/09/09 03:04:30.420 +0000 INFO [JobCallbackRequestMaker] [Azkaban] Global request configuration [expectContinueEnabled=false, proxy=null, localAddress=null, cookieSpec=null, redirectsEnabled=true, relativeRedirectsAllowed=true, maxRedirects=50, circularRedirectsAllowed=false, authenticationEnabled=true, targetPreferredAuthSchemes=null, proxyPreferredAuthSchemes=null, connectionRequestTimeout=3000, connectTimeout=3000, socketTimeout=3000, contentCompressionEnabled=true]
+2020/09/09 03:04:31.249 +0000 INFO [JobCallbackRequestMaker] [Azkaban] Jobcall thread pool size: 10
+2020/09/09 03:04:31.256 +0000 INFO [JobCallbackRequestMaker] [Azkaban] Initialization for azkaban.execapp.event.JobCallbackRequestMaker is completed
+2020/09/09 03:04:31.257 +0000 INFO [JobCallbackManager] [Azkaban] Initialization completed azkaban.execapp.event.JobCallbackManager
+2020/09/09 03:04:31.257 +0000 INFO [JobCallbackManager] [Azkaban] azkabanHostName webserver:8081
+2020/09/09 03:04:31.258 +0000 INFO [AzkabanExecutorServer] [Azkaban] Registering MBeans...
+2020/09/09 03:04:31.297 +0000 INFO [MBeanRegistrationManager] [Azkaban] Bean azkaban.jmx.JmxJettyServer registered.
+2020/09/09 03:04:31.300 +0000 INFO [MBeanRegistrationManager] [Azkaban] Bean azkaban.execapp.jmx.JmxFlowRunnerManager registered.
+2020/09/09 03:04:31.301 +0000 INFO [MBeanRegistrationManager] [Azkaban] Bean azkaban.execapp.jmx.JmxFlowRampManager registered.
+2020/09/09 03:04:31.303 +0000 INFO [MBeanRegistrationManager] [Azkaban] Bean azkaban.execapp.jmx.JmxJobMBeanManager registered.
+2020/09/09 03:04:31.304 +0000 INFO [MBeanRegistrationManager] [Azkaban] Bean azkaban.execapp.jmx.JmxJobCallback registered.
+2020/09/09 03:04:31.323 +0000 INFO [AzkabanExecutorServer] [Azkaban] No value for property: jmx.attribute.processor.class was found
+2020/09/09 03:04:32.280 +0000 INFO [AzkabanExecutorServer] [Azkaban] This executor wasn't found in the DB. Setting active=false.
+2020/09/09 03:04:32.280 +0000 INFO [log] [Azkaban] jetty-6.1.26
+2020/09/09 03:04:32.929 +0000 INFO [log] [Azkaban] Started SocketConnector@0.0.0.0:12321
+2020/09/09 03:04:32.939 +0000 INFO [AzkabanExecutorServer] [Azkaban] This executor wasn't found in the DB. Adding self.
+2020/09/09 03:04:33.061 +0000 INFO [AzkabanExecutorServer] [Azkaban] Started Executor Server on executor:12321
+2020/09/09 03:04:33.193 +0000 INFO [AzkabanExecutorServer] [Azkaban] Setting timezone to Asia/Beijing
+2020/09/09 03:05:30.311 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/09 03:06:30.327 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/09 03:06:30.334 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/09 03:07:30.334 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/09 03:08:30.341 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/09 03:08:30.354 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/09 03:09:30.367 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/09 03:10:30.452 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/09 03:10:30.460 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/09 03:11:30.573 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/09 03:12:30.949 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/09 03:12:31.178 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/09 03:13:31.178 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/09 03:14:31.179 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/09 03:14:31.180 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/09 03:15:31.190 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/09 03:16:31.204 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/09 03:16:31.219 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/09 03:17:31.225 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/09 03:18:31.234 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/09 03:18:31.247 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/09 03:19:31.249 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/09 03:20:31.389 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/09 03:20:32.553 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/09 03:21:32.564 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/09 03:22:32.569 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/09 03:22:32.586 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/09 03:23:32.587 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0

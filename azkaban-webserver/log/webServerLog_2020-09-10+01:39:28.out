@@ -1,0 +1,160 @@
+Error: HADOOP_HOME is not set. Hadoop job types will not run properly.
+bin/internal/../..
+:bin/internal/../../lib/activation-1.1.jar:bin/internal/../../lib/antlr-2.7.2.jar:bin/internal/../../lib/aopalliance-1.0.jar:bin/internal/../../lib/az-core-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/az-flow-trigger-dependency-plugin-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/azkaban-common-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/azkaban-db-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/azkaban-spi-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/azkaban-web-server-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/c3p0-0.9.1.1.jar:bin/internal/../../lib/cached-http-filesystem-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/cglib-nodep-2.2.jar:bin/internal/../../lib/commons-beanutils-1.7.0.jar:bin/internal/../../lib/commons-chain-1.1.jar:bin/internal/../../lib/commons-codec-1.13.jar:bin/internal/../../lib/commons-collections-3.2.2.jar:bin/internal/../../lib/commons-compress-1.2.jar:bin/internal/../../lib/commons-dbcp2-2.7.0.jar:bin/internal/../../lib/commons-dbutils-1.5.jar:bin/internal/../../lib/commons-digester-1.8.jar:bin/internal/../../lib/commons-fileupload-1.2.1.jar:bin/internal/../../lib/commons-io-2.4.jar:bin/internal/../../lib/commons-jexl-2.1.1.jar:bin/internal/../../lib/commons-lang-2.6.jar:bin/internal/../../lib/commons-logging-1.2.jar:bin/internal/../../lib/commons-math3-3.0.jar:bin/internal/../../lib/commons-pool2-2.7.0.jar:bin/internal/../../lib/commons-validator-1.3.1.jar:bin/internal/../../lib/data-1.15.7.jar:bin/internal/../../lib/data-transform-1.15.7.jar:bin/internal/../../lib/dom4j-1.1.jar:bin/internal/../../lib/gson-2.8.1.jar:bin/internal/../../lib/guava-21.0.jar:bin/internal/../../lib/guice-4.1.0.jar:bin/internal/../../lib/httpclient-4.5.3.jar:bin/internal/../../lib/httpcore-4.4.6.jar:bin/internal/../../lib/jackson-core-2.2.2.jar:bin/internal/../../lib/jackson-core-asl-1.9.5.jar:bin/internal/../../lib/jackson-mapper-asl-1.9.5.jar:bin/internal/../../lib/javax.inject-1.jar:bin/internal/../../lib/javax.servlet-api-3.0.1.jar:bin/internal/../../lib/jetty-6.1.26.jar:bin/internal/../../lib/jetty-util-6.1.26.jar:bin/internal/../../lib/joda-time-2.0.jar:bin/internal/../../lib/jopt-simple-4.3.jar:bin/internal/../../lib/json-20070829.jar:bin/internal/../../lib/li-jersey-uri-1.15.7.jar:bin/internal/../../lib/log4j-1.2.17.jar:bin/internal/../../lib/mail-1.4.5.jar:bin/internal/../../lib/metrics-core-3.1.0.jar:bin/internal/../../lib/metrics-jvm-3.1.0.jar:bin/internal/../../lib/mina-core-1.1.7.jar:bin/internal/../../lib/mysql-connector-java-5.1.28.jar:bin/internal/../../lib/netty-3.2.3.Final.jar:bin/internal/../../lib/oro-2.0.8.jar:bin/internal/../../lib/parseq-1.3.6.jar:bin/internal/../../lib/pegasus-common-1.15.7.jar:bin/internal/../../lib/quartz-2.2.1.jar:bin/internal/../../lib/r2-1.15.7.jar:bin/internal/../../lib/restli-common-1.15.7.jar:bin/internal/../../lib/restli-server-1.15.7.jar:bin/internal/../../lib/servlet-api-2.5-20081211.jar:bin/internal/../../lib/slf4j-api-1.7.18.jar:bin/internal/../../lib/slf4j-log4j12-1.7.18.jar:bin/internal/../../lib/snakeyaml-1.18.jar:bin/internal/../../lib/snappy-0.3.jar:bin/internal/../../lib/sslext-1.2-0.jar:bin/internal/../../lib/struts-core-1.3.8.jar:bin/internal/../../lib/struts-taglib-1.3.8.jar:bin/internal/../../lib/struts-tiles-1.3.8.jar:bin/internal/../../lib/velocity-1.7.jar:bin/internal/../../lib/velocity-tools-2.0.jar:bin/internal/../../extlib/*.jar:bin/internal/../../plugins/*/*.jar
+2020/09/10 01:39:29.345 +0000 INFO [AzkabanWebServer] [Azkaban] Starting Jetty Azkaban Web Server...
+2020/09/10 01:39:29.428 +0000 INFO [AzkabanServer] [Azkaban] Loading azkaban settings file from bin/internal/../../conf
+2020/09/10 01:39:29.429 +0000 INFO [AzkabanServer] [Azkaban] Loading azkaban properties file
+2020/09/10 01:39:31.429 +0000 INFO [log] [Azkaban] Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2020/09/10 01:39:31.429 +0000 INFO [WebServerProvider] [Azkaban] Setting up connector with stats on: true
+2020/09/10 01:39:31.433 +0000 INFO [WebServerProvider] [Azkaban] Starting server on port: 8081 # Max threads: 25
+2020/09/10 01:39:31.746 +0000 INFO [JdbcProjectImpl] [Azkaban] project temporary folder is being constructed.
+2020/09/10 01:39:31.747 +0000 WARN [StorageCleaner] [Azkaban] Project cleanup disabled. All artifacts will be stored.
+2020/09/10 01:39:31.747 +0000 INFO [ValidatorUtils] [Azkaban] Creating XmlValidatorManager instance (loading validators)...
+2020/09/10 01:39:31.762 +0000 WARN [XmlValidatorManager] [Azkaban] Validator directory validators does not exist or is not a directory.
+2020/09/10 01:39:31.764 +0000 WARN [XmlValidatorManager] [Azkaban] Azkaban properties file does not contain the key project.validators.xml.file
+2020/09/10 01:39:31.764 +0000 INFO [ValidatorUtils] [Azkaban] XmlValidatorManager instance created.
+2020/09/10 01:39:31.765 +0000 INFO [AzkabanProjectLoader] [Azkaban] Using temp dir: /app/temp
+2020/09/10 01:39:31.765 +0000 INFO [AzkabanProjectLoader] [Azkaban] Project version retention is set to 3
+2020/09/10 01:39:31.765 +0000 INFO [ProjectManager] [Azkaban] Loading active projects.
+2020/09/10 01:39:32.781 +0000 INFO [ProjectManager] [Azkaban] Loading flows from active projects.
+2020/09/10 01:39:32.811 +0000 INFO [ProjectManager] [Azkaban] Loading whitelisted projects.
+2020/09/10 01:39:32.812 +0000 INFO [ProjectManager] [Azkaban] ProjectManager instance created.
+2020/09/10 01:39:32.927 +0000 INFO [TriggerManager] [Azkaban] TriggerManager loaded.
+2020/09/10 01:39:32.927 +0000 WARN [SessionCache] [Azkaban] azkaban.session.max_number_per_ip_per_user is not configured. The number of sessions per IP per user is not being capped.
+2020/09/10 01:39:32.930 +0000 INFO [AzkabanWebServerModule] [Azkaban] Loading user manager class azkaban.user.XmlUserManager
+2020/09/10 01:39:33.303 +0000 INFO [XmlUserManager] [Azkaban] Loading user azkaban
+2020/09/10 01:39:33.304 +0000 INFO [XmlUserManager] [Azkaban] Loading user metrics
+2020/09/10 01:39:33.329 +0000 INFO [UserUtils] [Azkaban] Starting configuration watching thread.
+2020/09/10 01:39:33.442 +0000 INFO [AzkabanWebServer] [Azkaban] Loading built-in checker and action types
+2020/09/10 01:39:33.445 +0000 INFO [CheckerTypeLoader] [Azkaban] Registering checker BasicTimeChecker
+2020/09/10 01:39:33.446 +0000 INFO [CheckerTypeLoader] [Azkaban] Registering checker SlaChecker
+2020/09/10 01:39:33.446 +0000 INFO [CheckerTypeLoader] [Azkaban] Registering checker ExecutionChecker
+2020/09/10 01:39:33.446 +0000 INFO [ActionTypeLoader] [Azkaban] Registering action ExecuteFlowAction
+2020/09/10 01:39:33.446 +0000 INFO [ActionTypeLoader] [Azkaban] Registering action KillExecutionAction
+2020/09/10 01:39:33.447 +0000 INFO [ActionTypeLoader] [Azkaban] Registering action AlertAction
+2020/09/10 01:39:33.447 +0000 INFO [ActionTypeLoader] [Azkaban] Registering action CreateTriggerAction
+2020/09/10 01:39:33.448 +0000 INFO [PluginCheckerAndActionsLoader] [Azkaban] Loading plug-in checker and action types
+2020/09/10 01:39:33.448 +0000 ERROR [PluginCheckerAndActionsLoader] [Azkaban] plugin path plugins/triggers doesn't exist!
+2020/09/10 01:39:33.471 +0000 INFO [AzkabanWebServer] [Azkaban] Setting timezone to Asia/Beijing
+2020/09/10 01:39:33.471 +0000 INFO [AzkabanWebServer] [Azkaban] Registering MBeans...
+2020/09/10 01:39:33.481 +0000 INFO [MBeanRegistrationManager] [Azkaban] Bean azkaban.jmx.JmxJettyServer registered.
+2020/09/10 01:39:33.483 +0000 INFO [MBeanRegistrationManager] [Azkaban] Bean azkaban.jmx.JmxTriggerManager registered.
+2020/09/10 01:39:33.485 +0000 INFO [MBeanRegistrationManager] [Azkaban] Bean azkaban.jmx.JmxExecutorManager registered.
+2020/09/10 01:39:33.501 +0000 INFO [MBeanRegistrationManager] [Azkaban] Bean org.apache.log4j.jmx.HierarchyDynamicMBean registered.
+2020/09/10 01:39:33.502 +0000 INFO [AzkabanWebServer] [Azkaban] ************* loginLoggerObjName is null, make sure there is a logger with name azkaban.webapp.servlet.LoginAbstractAzkabanServlet
+2020/09/10 01:39:33.502 +0000 INFO [ExecutorManager] [Azkaban] Initializing executors from database.
+2020/09/10 01:39:33.505 +0000 INFO [ExecutorManager] [Azkaban] Loading running flows from database..
+2020/09/10 01:39:33.544 +0000 INFO [ExecutorManager] [Azkaban] Loaded 0 running flows
+2020/09/10 01:39:33.548 +0000 INFO [ExecutorManager] [Azkaban] QueueProcessorThread active turned true
+2020/09/10 01:39:33.559 +0000 INFO [ExecutionLogsCleaner] [Azkaban] Starting execution logs clean up thread
+2020/09/10 01:39:33.626 +0000 INFO [ExecutionLogsCleaner] [Azkaban] Cleaning old logs from execution_logs
+2020/09/10 01:39:33.655 +0000 INFO [AzkabanWebServer] [Azkaban] Setting up web resource dir web/
+2020/09/10 01:39:33.718 +0000 INFO [ExecutionLogsCleaner] [Azkaban] Cleaning old log files before 2020-06-18T01:39:33.654Z
+2020/09/10 01:39:33.865 +0000 INFO [JdbcTriggerImpl] [Azkaban] Loading all triggers from db.
+2020/09/10 01:39:33.874 +0000 INFO [JdbcTriggerImpl] [Azkaban] Loaded 0 triggers.
+2020/09/10 01:39:33.877 +0000 INFO [log] [Azkaban] jetty-6.1.26
+2020/09/10 01:39:33.929 +0000 INFO [ProjectManagerServlet] [Azkaban] downloadBufferSize: 8192
+2020/09/10 01:39:34.049 +0000 INFO [RestLiAnnotationReader] [Azkaban] Processed actions resource 'azkaban.restli.ProjectManagerResource'
+2020/09/10 01:39:34.076 +0000 INFO [RestLiAnnotationReader] [Azkaban] Processed actions resource 'azkaban.restli.UserManagerResource'
+2020/09/10 01:39:34.094 +0000 INFO [log] [Azkaban] Started SocketConnector@0.0.0.0:8081
+2020/09/10 01:39:34.094 +0000 INFO [AzkabanWebServer] [Azkaban] Server started
+2020/09/10 01:39:34.743 +0000 INFO [ExecutionLogsCleaner] [Azkaban] Cleaned up 0 log entries.
+2020/09/10 01:39:34.743 +0000 INFO [ExecutionLogsCleaner] [Azkaban] log clean up time: 1025 ms.
+2020/09/10 01:55:35.053 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177  -  "GET /executor execid=72&job=ppp HTTP/1.1" browser
+2020/09/10 01:55:44.656 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177  -  "POST /executor execid=72&job=ppp HTTP/1.1" browser
+2020/09/10 01:55:44.663 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] Session id created for user 'azkaban' and ip 125.33.162.177, 0 session(s) found from this IP
+2020/09/10 01:55:44.734 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor execid=72&job=ppp HTTP/1.1" browser
+2020/09/10 01:55:45.317 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor execid=72&jobId=ppp&ajax=fetchExecJobLogs&offset=0&length=50000&attempt=0 HTTP/1.1" browser
+2020/09/10 01:55:45.417 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor execid=72&jobId=ppp&ajax=fetchExecJobLogs&offset=2195&length=50000&attempt=0 HTTP/1.1" browser
+2020/09/10 01:57:35.667 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /index - HTTP/1.1" browser
+2020/09/10 01:57:38.214 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /manager project=az HTTP/1.1" browser
+2020/09/10 01:57:40.417 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /manager project=az&ajax=fetchflowjobs&flow=ppp HTTP/1.1" browser
+2020/09/10 01:57:41.195 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /manager project=az&flow=ppp&job=ppp HTTP/1.1" browser
+2020/09/10 01:57:41.195 +0000 INFO [ProjectManagerServlet] [Azkaban] JobPage: project az version is 4, reference is 466811488
+2020/09/10 01:57:49.043 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /manager project=az&ajax=fetchJobInfo&flowName=ppp&jobName=ppp HTTP/1.1" browser
+2020/09/10 01:58:05.305 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /manager project=az&flowName=ppp&jobName=ppp&ajax=setJobOverrideProperty&jobOverride%5Bcommand%5D=python++%2Fhome%2Fgbdp%2Fdatax%2Fjob.py&jobOverride%5Btype%5D=command HTTP/1.1" browser
+2020/09/10 01:58:05.387 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /manager project=az&flow=ppp&job=ppp HTTP/1.1" browser
+2020/09/10 01:58:05.387 +0000 INFO [ProjectManagerServlet] [Azkaban] JobPage: project az version is 4, reference is 466811488
+2020/09/10 01:58:07.584 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /index - HTTP/1.1" browser
+2020/09/10 01:58:08.755 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /manager project=az HTTP/1.1" browser
+2020/09/10 01:58:11.020 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor project=az&ajax=fetchscheduledflowgraph&flow=ppp HTTP/1.1" browser
+2020/09/10 01:58:11.047 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor project=az&ajax=flowInfo&flow=ppp HTTP/1.1" browser
+2020/09/10 01:58:11.972 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor projectId=2&project=az&ajax=executeFlow&flow=ppp&disabled=%5B%5D&failureEmailsOverride=false&successEmailsOverride=false&failureAction=finishCurrent&failureEmails=&successEmails=&notifyFailureFirst=false&notifyFailureLast=false&concurrentOption=skip HTTP/1.1" browser
+2020/09/10 01:58:11.974 +0000 INFO [ExecutorManager] [Azkaban] Submitting execution flow ppp by azkaban
+2020/09/10 01:58:12.021 +0000 INFO [ExecutionFlowDao] [Azkaban] Flow given ppp given id 78
+2020/09/10 01:58:13.115 +0000 INFO [ExecutorManager] [Azkaban] Successfully refreshed executor: executor:12321 (id: 4), active=true with executor info : ExecutorInfo{remainingMemoryPercent=17.096906616656817, remainingMemoryInMB=5472, remainingFlowCapacity=30, numberOfAssignedFlows=0, lastDispatchedTime=0, cpuUsage=20.21}
+2020/09/10 01:58:13.116 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :78
+2020/09/10 01:58:13.149 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor execid=78 HTTP/1.1" browser
+2020/09/10 01:58:13.340 +0000 INFO [ExecutorManager] [Azkaban] Successfully dispatched exec 78 with error count 0
+2020/09/10 01:58:13.428 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor execid=78&ajax=fetchExecFlowLogs&offset=0&length=50000 HTTP/1.1" browser
+2020/09/10 01:58:13.486 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor execid=78&ajax=fetchexecflow HTTP/1.1" browser
+2020/09/10 01:58:13.491 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /flowtriggerinstance execid=78&ajax=fetchTriggerStatus HTTP/1.1" browser
+2020/09/10 01:58:13.491 +0000 INFO [ExecutorServlet] [Azkaban] Fetching 78
+2020/09/10 01:58:13.528 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor execid=78&ajax=fetchexecflowupdate&lastUpdateTime=1599703093378 HTTP/1.1" browser
+2020/09/10 01:58:13.529 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor execid=78&ajax=fetchExecFlowLogs&offset=396&length=50000 HTTP/1.1" browser
+2020/09/10 01:58:13.558 +0000 INFO [ExecutorServlet] [Azkaban] Fetching 78
+2020/09/10 01:58:31.371 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor - HTTP/1.1" browser
+2020/09/10 01:58:34.334 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor execid=78 HTTP/1.1" browser
+2020/09/10 01:58:34.479 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor execid=78&ajax=fetchExecFlowLogs&offset=0&length=50000 HTTP/1.1" browser
+2020/09/10 01:58:34.503 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor execid=78&ajax=fetchexecflow HTTP/1.1" browser
+2020/09/10 01:58:34.504 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /flowtriggerinstance execid=78&ajax=fetchTriggerStatus HTTP/1.1" browser
+2020/09/10 01:58:34.517 +0000 INFO [ExecutorServlet] [Azkaban] Fetching 78
+2020/09/10 01:58:34.549 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor execid=78&ajax=fetchExecFlowLogs&offset=1360&length=50000 HTTP/1.1" browser
+2020/09/10 01:58:45.458 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /schedule - HTTP/1.1" browser
+2020/09/10 01:58:46.621 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /index - HTTP/1.1" browser
+2020/09/10 01:58:47.679 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /manager project=az HTTP/1.1" browser
+2020/09/10 01:58:48.923 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /manager project=az&ajax=fetchflowjobs&flow=ppp HTTP/1.1" browser
+2020/09/10 01:58:50.279 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /manager project=az&flow=ppp&job=ppp HTTP/1.1" browser
+2020/09/10 01:58:50.280 +0000 INFO [ProjectManagerServlet] [Azkaban] JobPage: project az version is 4, reference is 466811488
+2020/09/10 01:58:51.946 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /manager project=az&ajax=fetchJobInfo&flowName=ppp&jobName=ppp HTTP/1.1" browser
+2020/09/10 01:58:55.534 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /manager project=az&flowName=ppp&jobName=ppp&ajax=setJobOverrideProperty&jobOverride%5Bcommand%5D=python2++%2Fhome%2Fgbdp%2Fdatax%2Fjob.py&jobOverride%5Btype%5D=command HTTP/1.1" browser
+2020/09/10 01:58:55.600 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /manager project=az&flow=ppp&job=ppp HTTP/1.1" browser
+2020/09/10 01:58:55.601 +0000 INFO [ProjectManagerServlet] [Azkaban] JobPage: project az version is 4, reference is 466811488
+2020/09/10 01:58:56.850 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /schedule - HTTP/1.1" browser
+2020/09/10 01:58:58.771 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET / - HTTP/1.1" browser
+2020/09/10 01:58:58.783 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /index - HTTP/1.1" browser
+2020/09/10 01:58:59.808 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /manager project=az HTTP/1.1" browser
+2020/09/10 01:59:00.725 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor project=az&ajax=fetchscheduledflowgraph&flow=ppp HTTP/1.1" browser
+2020/09/10 01:59:00.733 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor project=az&ajax=flowInfo&flow=ppp HTTP/1.1" browser
+2020/09/10 01:59:01.741 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor projectId=2&project=az&ajax=executeFlow&flow=ppp&disabled=%5B%5D&failureEmailsOverride=false&successEmailsOverride=false&failureAction=finishCurrent&failureEmails=&successEmails=&notifyFailureFirst=false&notifyFailureLast=false&concurrentOption=skip HTTP/1.1" browser
+2020/09/10 01:59:01.745 +0000 INFO [ExecutorManager] [Azkaban] Submitting execution flow ppp by azkaban
+2020/09/10 01:59:01.761 +0000 INFO [ExecutionFlowDao] [Azkaban] Flow given ppp given id 79
+2020/09/10 01:59:01.785 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :79
+2020/09/10 01:59:01.835 +0000 INFO [ExecutorManager] [Azkaban] Successfully dispatched exec 79 with error count 0
+2020/09/10 01:59:02.828 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor execid=79 HTTP/1.1" browser
+2020/09/10 01:59:02.940 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor execid=79&ajax=fetchExecFlowLogs&offset=0&length=50000 HTTP/1.1" browser
+2020/09/10 01:59:02.962 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor execid=79&ajax=fetchexecflow HTTP/1.1" browser
+2020/09/10 01:59:02.963 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /flowtriggerinstance execid=79&ajax=fetchTriggerStatus HTTP/1.1" browser
+2020/09/10 01:59:02.979 +0000 INFO [ExecutorServlet] [Azkaban] Fetching 79
+2020/09/10 01:59:03.008 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor execid=79&ajax=fetchExecFlowLogs&offset=1360&length=50000 HTTP/1.1" browser
+2020/09/10 01:59:10.617 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /index - HTTP/1.1" browser
+2020/09/10 01:59:11.969 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /manager project=az HTTP/1.1" browser
+2020/09/10 01:59:13.452 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /manager project=az&ajax=fetchflowjobs&flow=ppp HTTP/1.1" browser
+2020/09/10 01:59:14.152 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /manager project=az&flow=ppp&job=ppp HTTP/1.1" browser
+2020/09/10 01:59:14.153 +0000 INFO [ProjectManagerServlet] [Azkaban] JobPage: project az version is 4, reference is 466811488
+2020/09/10 01:59:15.437 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /manager project=az&ajax=fetchJobInfo&flowName=ppp&jobName=ppp HTTP/1.1" browser
+2020/09/10 01:59:44.972 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /manager project=az&flowName=ppp&jobName=ppp&ajax=setJobOverrideProperty&jobOverride%5Bcommand%5D=python2+-V&jobOverride%5Btype%5D=command HTTP/1.1" browser
+2020/09/10 01:59:45.016 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /manager project=az&flow=ppp&job=ppp HTTP/1.1" browser
+2020/09/10 01:59:45.017 +0000 INFO [ProjectManagerServlet] [Azkaban] JobPage: project az version is 4, reference is 466811488
+2020/09/10 01:59:46.720 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /index - HTTP/1.1" browser
+2020/09/10 01:59:47.896 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /manager project=az HTTP/1.1" browser
+2020/09/10 01:59:48.845 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor project=az&ajax=flowInfo&flow=ppp HTTP/1.1" browser
+2020/09/10 01:59:48.846 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor project=az&ajax=fetchscheduledflowgraph&flow=ppp HTTP/1.1" browser
+2020/09/10 01:59:50.091 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor projectId=2&project=az&ajax=executeFlow&flow=ppp&disabled=%5B%5D&failureEmailsOverride=false&successEmailsOverride=false&failureAction=finishCurrent&failureEmails=&successEmails=&notifyFailureFirst=false&notifyFailureLast=false&concurrentOption=skip HTTP/1.1" browser
+2020/09/10 01:59:50.092 +0000 INFO [ExecutorManager] [Azkaban] Submitting execution flow ppp by azkaban
+2020/09/10 01:59:50.115 +0000 INFO [ExecutionFlowDao] [Azkaban] Flow given ppp given id 80
+2020/09/10 01:59:50.246 +0000 INFO [ExecutorManager] [Azkaban] Successfully refreshed executor: executor:12321 (id: 4), active=true with executor info : ExecutorInfo{remainingMemoryPercent=17.003162550404824, remainingMemoryInMB=5442, remainingFlowCapacity=30, numberOfAssignedFlows=0, lastDispatchedTime=1599703141830, cpuUsage=19.37}
+2020/09/10 01:59:50.246 +0000 INFO [ExecutorManager] [Azkaban] Using dispatcher for execution id :80
+2020/09/10 01:59:50.283 +0000 INFO [ExecutorManager] [Azkaban] Successfully dispatched exec 80 with error count 0
+2020/09/10 01:59:51.070 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor execid=80 HTTP/1.1" browser
+2020/09/10 01:59:51.184 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor execid=80&ajax=fetchExecFlowLogs&offset=0&length=50000 HTTP/1.1" browser
+2020/09/10 01:59:51.213 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor execid=80&ajax=fetchexecflow HTTP/1.1" browser
+2020/09/10 01:59:51.214 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /flowtriggerinstance execid=80&ajax=fetchTriggerStatus HTTP/1.1" browser
+2020/09/10 01:59:51.216 +0000 INFO [ExecutorServlet] [Azkaban] Fetching 80
+2020/09/10 01:59:51.299 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor execid=80&ajax=fetchExecFlowLogs&offset=1291&length=50000 HTTP/1.1" browser
+2020/09/10 01:59:54.434 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor execid=80&job=ppp HTTP/1.1" browser
+2020/09/10 01:59:54.518 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor execid=80&jobId=ppp&ajax=fetchExecJobLogs&offset=0&length=50000&attempt=0 HTTP/1.1" browser
+2020/09/10 01:59:54.541 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /executor execid=80&jobId=ppp&ajax=fetchExecJobLogs&offset=1545&length=50000&attempt=0 HTTP/1.1" browser
+2020/09/10 02:00:03.073 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /index - HTTP/1.1" browser
+2020/09/10 02:00:04.312 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 125.33.162.177 azkaban "GET /manager project=az HTTP/1.1" browser
+2020/09/10 02:13:32.608 +0000 INFO [LoginAbstractAzkabanServlet] [Azkaban] 116.128.128.41  -  "GET /flowtriggerinstance execid%3D77%26ajax%3DfetchTriggerStatus HTTP/1.1" browser

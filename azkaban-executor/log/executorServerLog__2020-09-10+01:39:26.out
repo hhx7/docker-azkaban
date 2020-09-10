@@ -1,0 +1,219 @@
+Error: HADOOP_HOME is not set. Hadoop job types will not run properly.
+bin/internal/../..
+:bin/internal/../../lib/activation-1.1.jar:bin/internal/../../lib/aopalliance-1.0.jar:bin/internal/../../lib/az-core-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/az-hadoop-jobtype-plugin-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/azkaban-common-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/azkaban-db-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/azkaban-exec-server-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/azkaban-hadoop-security-plugin-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/azkaban-spi-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/c3p0-0.9.1.1.jar:bin/internal/../../lib/cached-http-filesystem-0.1.0-SNAPSHOT.jar:bin/internal/../../lib/commons-codec-1.13.jar:bin/internal/../../lib/commons-collections-3.2.2.jar:bin/internal/../../lib/commons-dbcp2-2.7.0.jar:bin/internal/../../lib/commons-dbutils-1.5.jar:bin/internal/../../lib/commons-fileupload-1.2.1.jar:bin/internal/../../lib/commons-io-2.4.jar:bin/internal/../../lib/commons-jexl-2.1.1.jar:bin/internal/../../lib/commons-lang-2.6.jar:bin/internal/../../lib/commons-logging-1.2.jar:bin/internal/../../lib/commons-math3-3.0.jar:bin/internal/../../lib/commons-pool2-2.7.0.jar:bin/internal/../../lib/gson-2.8.1.jar:bin/internal/../../lib/guava-21.0.jar:bin/internal/../../lib/guice-4.1.0.jar:bin/internal/../../lib/httpclient-4.5.3.jar:bin/internal/../../lib/httpcore-4.4.6.jar:bin/internal/../../lib/jackson-core-asl-1.9.5.jar:bin/internal/../../lib/jackson-mapper-asl-1.9.5.jar:bin/internal/../../lib/javax.inject-1.jar:bin/internal/../../lib/jetty-6.1.26.jar:bin/internal/../../lib/jetty-util-6.1.26.jar:bin/internal/../../lib/joda-time-2.0.jar:bin/internal/../../lib/jopt-simple-4.3.jar:bin/internal/../../lib/jsr305-3.0.2.jar:bin/internal/../../lib/kafka-clients-0.10.0.0.jar:bin/internal/../../lib/kafka-log4j-appender-0.10.0.0.jar:bin/internal/../../lib/log4j-1.2.17.jar:bin/internal/../../lib/lz4-1.3.0.jar:bin/internal/../../lib/mail-1.4.5.jar:bin/internal/../../lib/metrics-core-3.1.0.jar:bin/internal/../../lib/metrics-jvm-3.1.0.jar:bin/internal/../../lib/mysql-connector-java-5.1.28.jar:bin/internal/../../lib/quartz-2.2.1.jar:bin/internal/../../lib/servlet-api-2.5-20081211.jar:bin/internal/../../lib/slf4j-api-1.7.21.jar:bin/internal/../../lib/slf4j-log4j12-1.7.21.jar:bin/internal/../../lib/snakeyaml-1.18.jar:bin/internal/../../lib/snappy-java-1.1.2.4.jar:bin/internal/../../lib/velocity-1.7.jar:bin/internal/../../extlib/*.jar:bin/internal/../../plugins/*/*.jar
+Starting AzkabanExecutorServer on port 12321  ...
+2020/09/10 01:39:27.764 +0000 INFO [AzkabanExecutorServer] [Azkaban] Starting Jetty Azkaban Executor...
+2020/09/10 01:39:27.832 +0000 INFO [AzkabanServer] [Azkaban] Loading azkaban settings file from bin/internal/../../conf
+2020/09/10 01:39:27.833 +0000 INFO [AzkabanServer] [Azkaban] Loading azkaban properties file
+2020/09/10 01:39:29.556 +0000 INFO [JdbcProjectImpl] [Azkaban] project temporary folder is being constructed.
+2020/09/10 01:39:29.557 +0000 WARN [StorageCleaner] [Azkaban] Project cleanup disabled. All artifacts will be stored.
+2020/09/10 01:39:29.575 +0000 INFO [AzkabanExecServerModule] [Azkaban] Event reporter is not enabled
+2020/09/10 01:39:29.575 +0000 INFO [FlowRunnerManager] [Azkaban] Creating subprocess to run shell command: chmod g+s executions
+2020/09/10 01:39:29.609 +0000 INFO [FlowRunnerManager] [Azkaban] useNewThreadPool: false
+2020/09/10 01:39:29.612 +0000 INFO [JobTypeManager] [Azkaban] Loading plugin default job types
+2020/09/10 01:39:29.616 +0000 INFO [JobTypeManager] [Azkaban] Job type plugin directory set. Loading extra job types from plugins/jobtypes
+2020/09/10 01:39:29.616 +0000 INFO [JobTypeManager] [Azkaban] Common plugin job props file plugins/jobtypes/common.properties not found. Using only globals props
+2020/09/10 01:39:29.616 +0000 INFO [JobTypeManager] [Azkaban] Common plugin load props file plugins/jobtypes/commonprivate.properties found. Attempt to load.
+2020/09/10 01:39:29.636 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 01:39:29.636 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/10 01:39:29.650 +0000 INFO [log] [Azkaban] Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2020/09/10 01:39:29.652 +0000 INFO [ExecJettyServerModule] [Azkaban] Setting up connector with stats on: true
+2020/09/10 01:39:29.653 +0000 INFO [ExecJettyServerModule] [Azkaban] Jetty connector name: 0.0.0.0:12321, default header buffer size: 4096
+2020/09/10 01:39:29.653 +0000 INFO [ExecJettyServerModule] [Azkaban] Jetty connector name: 0.0.0.0:12321, (if) new header buffer size: 4096
+2020/09/10 01:39:29.729 +0000 INFO [JmxJobMBeanManager] [Azkaban] Initializing azkaban.execapp.jmx.JmxJobMBeanManager
+2020/09/10 01:39:29.739 +0000 INFO [AzkabanExecutorServer] [Azkaban] Job callback enabled? true
+2020/09/10 01:39:29.742 +0000 INFO [JobCallbackManager] [Azkaban] Initializing
+2020/09/10 01:39:29.745 +0000 INFO [JobCallbackRequestMaker] [Azkaban] responseWaitTimeoutMS: 5000
+2020/09/10 01:39:29.746 +0000 INFO [JobCallbackRequestMaker] [Azkaban] Global request configuration [expectContinueEnabled=false, proxy=null, localAddress=null, cookieSpec=null, redirectsEnabled=true, relativeRedirectsAllowed=true, maxRedirects=50, circularRedirectsAllowed=false, authenticationEnabled=true, targetPreferredAuthSchemes=null, proxyPreferredAuthSchemes=null, connectionRequestTimeout=3000, connectTimeout=3000, socketTimeout=3000, contentCompressionEnabled=true]
+2020/09/10 01:39:30.246 +0000 INFO [JobCallbackRequestMaker] [Azkaban] Jobcall thread pool size: 10
+2020/09/10 01:39:30.248 +0000 INFO [JobCallbackRequestMaker] [Azkaban] Initialization for azkaban.execapp.event.JobCallbackRequestMaker is completed
+2020/09/10 01:39:30.249 +0000 INFO [JobCallbackManager] [Azkaban] Initialization completed azkaban.execapp.event.JobCallbackManager
+2020/09/10 01:39:30.249 +0000 INFO [JobCallbackManager] [Azkaban] azkabanHostName webserver:8081
+2020/09/10 01:39:30.249 +0000 INFO [AzkabanExecutorServer] [Azkaban] Registering MBeans...
+2020/09/10 01:39:30.263 +0000 INFO [MBeanRegistrationManager] [Azkaban] Bean azkaban.jmx.JmxJettyServer registered.
+2020/09/10 01:39:30.266 +0000 INFO [MBeanRegistrationManager] [Azkaban] Bean azkaban.execapp.jmx.JmxFlowRunnerManager registered.
+2020/09/10 01:39:30.267 +0000 INFO [MBeanRegistrationManager] [Azkaban] Bean azkaban.execapp.jmx.JmxFlowRampManager registered.
+2020/09/10 01:39:30.268 +0000 INFO [MBeanRegistrationManager] [Azkaban] Bean azkaban.execapp.jmx.JmxJobMBeanManager registered.
+2020/09/10 01:39:30.269 +0000 INFO [MBeanRegistrationManager] [Azkaban] Bean azkaban.execapp.jmx.JmxJobCallback registered.
+2020/09/10 01:39:30.269 +0000 INFO [AzkabanExecutorServer] [Azkaban] No value for property: jmx.attribute.processor.class was found
+2020/09/10 01:39:30.805 +0000 INFO [AzkabanExecutorServer] [Azkaban] This executor is already in the DB. Found active=true
+2020/09/10 01:39:30.806 +0000 INFO [log] [Azkaban] jetty-6.1.26
+2020/09/10 01:39:31.466 +0000 INFO [log] [Azkaban] Started SocketConnector@0.0.0.0:12321
+2020/09/10 01:39:31.468 +0000 INFO [AzkabanExecutorServer] [Azkaban] This executor is already in the DB. Found: executor:12321 (id: 4), active=true
+2020/09/10 01:39:31.533 +0000 INFO [AzkabanExecutorServer] [Azkaban] Started Executor Server on executor:12321
+2020/09/10 01:39:31.573 +0000 INFO [AzkabanExecutorServer] [Azkaban] Setting timezone to Asia/Beijing
+2020/09/10 01:40:29.638 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 01:41:29.639 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 01:41:29.639 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/10 01:42:29.640 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 01:43:29.641 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 01:43:29.641 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/10 01:44:29.641 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 01:45:29.643 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 01:45:29.643 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/10 01:46:29.643 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 01:47:29.645 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 01:47:29.645 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/10 01:48:29.645 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 01:49:29.647 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 01:49:29.647 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/10 01:50:29.649 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 01:51:29.649 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 01:51:29.650 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/10 01:52:29.650 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 01:53:29.651 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 01:53:29.651 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/10 01:54:29.652 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 01:55:29.654 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 01:55:29.654 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/10 01:56:29.655 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 01:57:29.656 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 01:57:29.656 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/10 01:58:12.720 +0000 INFO [ServerStatisticsServlet] [Azkaban] System load : 20.21
+2020/09/10 01:58:13.186 +0000 INFO [ExecutorServlet] [Azkaban] User  has called action execute on 78
+2020/09/10 01:58:13.263 +0000 INFO [ProjectStorageManager] [Azkaban] Fetching project file. project ID: 2 version: 4
+2020/09/10 01:58:13.270 +0000 INFO [JdbcProjectImpl] [Azkaban] Md5 Hash is valid
+2020/09/10 01:58:13.271 +0000 INFO [FlowPreparer] [Azkaban] Downloading zip file for project ProjectVersion{projectId=2, version=4, installedDir=projects/2.4, dirSizeInByte=null, lastAccessTime=null} when preparing execution [execid 78] completed in 0 second(s)
+2020/09/10 01:58:13.272 +0000 INFO [FlowPreparer] [Azkaban] Downloading 0 JAR dependencies... Project: ProjectVersion{projectId=2, version=4, installedDir=projects/2.4, dirSizeInByte=null, lastAccessTime=null}, ExecId: 78
+2020/09/10 01:58:13.281 +0000 INFO [FlowPreparer] [Azkaban] Downloading 0 JAR dependencies for project ProjectVersion{projectId=2, version=4, installedDir=projects/2.4, dirSizeInByte=null, lastAccessTime=null} when preparing execution [execid 78] completed in 0 second(s)
+2020/09/10 01:58:13.289 +0000 INFO [FlowPreparer] [Azkaban] Project is setup for execution 78
+2020/09/10 01:58:13.289 +0000 INFO [FlowPreparer] [Azkaban] Setting up execution dir for 78
+2020/09/10 01:58:13.291 +0000 INFO [FlowPreparer] [Azkaban] Setting up execution dir executions/78 took 0 sec(s)
+2020/09/10 01:58:13.291 +0000 INFO [FlowPreparer] [Azkaban] Flow preparation completed in 0 sec(s), out ot which 0 sec(s) was spent inside critical section. [execid: 78, path: executions/78]
+2020/09/10 01:58:13.314 +0000 INFO [FlowRunnerManager] [Azkaban] Configuring Azkaban metrics tracking for flow runner object
+2020/09/10 01:58:13.369 +0000 INFO [ppp] [Azkaban] Assigned executor : executor:12321
+2020/09/10 01:58:13.377 +0000 INFO [ppp] [Azkaban] Running execid:78 flow:ppp project:2 version:4
+2020/09/10 01:58:13.378 +0000 INFO [ppp] [Azkaban] Updating initial flow directory.
+2020/09/10 01:58:13.432 +0000 INFO [ppp] [Azkaban] Fetching job and shared properties.
+2020/09/10 01:58:13.436 +0000 INFO [ppp] [Azkaban] Starting flows
+2020/09/10 01:58:13.437 +0000 INFO [ppp] [Azkaban] Running flow 'ppp'.
+2020/09/10 01:58:13.459 +0000 INFO [ExecutorServlet] [Azkaban] User  has called action log on 78
+2020/09/10 01:58:13.493 +0000 INFO [ppp] [Azkaban] Configuring Azkaban metrics tracking for jobrunner object
+2020/09/10 01:58:13.493 +0000 INFO [ppp] [Azkaban] Submitting job 'ppp' to run.
+2020/09/10 01:58:13.503 +0000 INFO [ppp] [Azkaban] Log file path for job: ppp is: /app/executions/78/_job.78.ppp.log
+2020/09/10 01:58:13.513 +0000 INFO [ppp] [Azkaban] Created file appender for job ppp
+2020/09/10 01:58:13.514 +0000 INFO [ppp] [Azkaban] Attached file appender for job ppp
+2020/09/10 01:58:13.519 +0000 INFO [ExecutorDao] [Azkaban] Uploading flowId ppp
+2020/09/10 01:58:13.537 +0000 INFO [ppp] [Azkaban] Job Started: ppp
+2020/09/10 01:58:13.598 +0000 INFO [ExecutorServlet] [Azkaban] User  has called action log on 78
+2020/09/10 01:58:13.789 +0000 INFO [ppp] [Azkaban] No attachment file for job ppp written.
+2020/09/10 01:58:13.807 +0000 INFO [JobCallbackManager] [Azkaban] No callback property for FAILED, exec id: 78
+2020/09/10 01:58:13.808 +0000 INFO [ppp] [Azkaban] Job ppp finished with status FAILED in 0 seconds
+2020/09/10 01:58:13.819 +0000 INFO [ppp] [Azkaban] Setting ppp to FAILED_FINISHING
+2020/09/10 01:58:13.820 +0000 INFO [ppp] [Azkaban] Setting flow 'ppp' status to FAILED in 0 seconds
+2020/09/10 01:58:13.835 +0000 INFO [ppp] [Azkaban] Finishing up flow. Awaiting Termination
+2020/09/10 01:58:13.881 +0000 INFO [ppp] [Azkaban] Finished Flow
+2020/09/10 01:58:13.881 +0000 INFO [ppp] [Azkaban] Setting end time for flow 78 to 1599703093881
+2020/09/10 01:58:13.915 +0000 INFO [FlowRunnerManager] [Azkaban] Flow 78 is finished. Adding it to recently finished flows list.
+2020/09/10 01:58:13.915 +0000 INFO [FlowRunnerManager] [Azkaban] Deleting execution directory for 78
+2020/09/10 01:58:13.916 +0000 INFO [FlowRunnerManager] [Azkaban] Starting execution directory deletion for 78
+2020/09/10 01:58:13.917 +0000 INFO [ppp] [Azkaban] Created FLOW_FINISHED event for 78
+2020/09/10 01:58:29.657 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 01:59:01.820 +0000 INFO [ExecutorServlet] [Azkaban] User  has called action execute on 79
+2020/09/10 01:59:01.825 +0000 INFO [FlowPreparer] [Azkaban] Project ProjectVersion{projectId=2, version=4, installedDir=projects/2.4, dirSizeInByte=null, lastAccessTime=null} already cached. Skipping download. ExecId: 79
+2020/09/10 01:59:01.825 +0000 INFO [FlowPreparer] [Azkaban] Project is setup for execution 79
+2020/09/10 01:59:01.826 +0000 INFO [FlowPreparer] [Azkaban] Setting up execution dir for 79
+2020/09/10 01:59:01.828 +0000 INFO [FlowPreparer] [Azkaban] Setting up execution dir executions/79 took 0 sec(s)
+2020/09/10 01:59:01.828 +0000 INFO [FlowPreparer] [Azkaban] Flow preparation completed in 0 sec(s), out ot which 0 sec(s) was spent inside critical section. [execid: 79, path: executions/79]
+2020/09/10 01:59:01.828 +0000 INFO [FlowRunnerManager] [Azkaban] Configuring Azkaban metrics tracking for flow runner object
+2020/09/10 01:59:01.841 +0000 INFO [ppp] [Azkaban] Assigned executor : executor:12321
+2020/09/10 01:59:01.844 +0000 INFO [ppp] [Azkaban] Running execid:79 flow:ppp project:2 version:4
+2020/09/10 01:59:01.848 +0000 INFO [ppp] [Azkaban] Updating initial flow directory.
+2020/09/10 01:59:01.878 +0000 INFO [ppp] [Azkaban] Fetching job and shared properties.
+2020/09/10 01:59:01.879 +0000 INFO [ppp] [Azkaban] Starting flows
+2020/09/10 01:59:01.879 +0000 INFO [ppp] [Azkaban] Running flow 'ppp'.
+2020/09/10 01:59:01.882 +0000 INFO [ppp] [Azkaban] Configuring Azkaban metrics tracking for jobrunner object
+2020/09/10 01:59:01.882 +0000 INFO [ppp] [Azkaban] Submitting job 'ppp' to run.
+2020/09/10 01:59:01.899 +0000 INFO [ppp] [Azkaban] Log file path for job: ppp is: /app/executions/79/_job.79.ppp.log
+2020/09/10 01:59:01.906 +0000 INFO [ppp] [Azkaban] Created file appender for job ppp
+2020/09/10 01:59:01.907 +0000 INFO [ppp] [Azkaban] Attached file appender for job ppp
+2020/09/10 01:59:01.908 +0000 INFO [ExecutorDao] [Azkaban] Uploading flowId ppp
+2020/09/10 01:59:01.952 +0000 INFO [ppp] [Azkaban] Job Started: ppp
+2020/09/10 01:59:02.098 +0000 INFO [ppp] [Azkaban] No attachment file for job ppp written.
+2020/09/10 01:59:02.107 +0000 INFO [JobCallbackManager] [Azkaban] No callback property for FAILED, exec id: 79
+2020/09/10 01:59:02.108 +0000 INFO [ppp] [Azkaban] Job ppp finished with status FAILED in 0 seconds
+2020/09/10 01:59:02.111 +0000 INFO [ppp] [Azkaban] Setting ppp to FAILED_FINISHING
+2020/09/10 01:59:02.112 +0000 INFO [ppp] [Azkaban] Setting flow 'ppp' status to FAILED in 0 seconds
+2020/09/10 01:59:02.127 +0000 INFO [ppp] [Azkaban] Finishing up flow. Awaiting Termination
+2020/09/10 01:59:02.164 +0000 INFO [ppp] [Azkaban] Finished Flow
+2020/09/10 01:59:02.164 +0000 INFO [ppp] [Azkaban] Setting end time for flow 79 to 1599703142164
+2020/09/10 01:59:02.199 +0000 INFO [FlowRunnerManager] [Azkaban] Flow 79 is finished. Adding it to recently finished flows list.
+2020/09/10 01:59:02.199 +0000 INFO [FlowRunnerManager] [Azkaban] Deleting execution directory for 79
+2020/09/10 01:59:02.199 +0000 INFO [FlowRunnerManager] [Azkaban] Starting execution directory deletion for 79
+2020/09/10 01:59:02.200 +0000 INFO [ppp] [Azkaban] Created FLOW_FINISHED event for 79
+2020/09/10 01:59:29.658 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 01:59:29.658 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/10 01:59:29.658 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning execution 78 from recently finished flows list.
+2020/09/10 01:59:50.233 +0000 INFO [ServerStatisticsServlet] [Azkaban] System load : 19.37
+2020/09/10 01:59:50.265 +0000 INFO [ExecutorServlet] [Azkaban] User  has called action execute on 80
+2020/09/10 01:59:50.268 +0000 INFO [FlowPreparer] [Azkaban] Project ProjectVersion{projectId=2, version=4, installedDir=projects/2.4, dirSizeInByte=null, lastAccessTime=null} already cached. Skipping download. ExecId: 80
+2020/09/10 01:59:50.269 +0000 INFO [FlowPreparer] [Azkaban] Project is setup for execution 80
+2020/09/10 01:59:50.269 +0000 INFO [FlowPreparer] [Azkaban] Setting up execution dir for 80
+2020/09/10 01:59:50.269 +0000 INFO [FlowPreparer] [Azkaban] Setting up execution dir executions/80 took 0 sec(s)
+2020/09/10 01:59:50.269 +0000 INFO [FlowPreparer] [Azkaban] Flow preparation completed in 0 sec(s), out ot which 0 sec(s) was spent inside critical section. [execid: 80, path: executions/80]
+2020/09/10 01:59:50.276 +0000 INFO [FlowRunnerManager] [Azkaban] Configuring Azkaban metrics tracking for flow runner object
+2020/09/10 01:59:50.284 +0000 INFO [ppp] [Azkaban] Assigned executor : executor:12321
+2020/09/10 01:59:50.285 +0000 INFO [ppp] [Azkaban] Running execid:80 flow:ppp project:2 version:4
+2020/09/10 01:59:50.285 +0000 INFO [ppp] [Azkaban] Updating initial flow directory.
+2020/09/10 01:59:50.359 +0000 INFO [ppp] [Azkaban] Fetching job and shared properties.
+2020/09/10 01:59:50.360 +0000 INFO [ppp] [Azkaban] Starting flows
+2020/09/10 01:59:50.360 +0000 INFO [ppp] [Azkaban] Running flow 'ppp'.
+2020/09/10 01:59:50.365 +0000 INFO [ppp] [Azkaban] Configuring Azkaban metrics tracking for jobrunner object
+2020/09/10 01:59:50.365 +0000 INFO [ppp] [Azkaban] Submitting job 'ppp' to run.
+2020/09/10 01:59:50.385 +0000 INFO [ppp] [Azkaban] Log file path for job: ppp is: /app/executions/80/_job.80.ppp.log
+2020/09/10 01:59:50.413 +0000 INFO [ppp] [Azkaban] Created file appender for job ppp
+2020/09/10 01:59:50.413 +0000 INFO [ppp] [Azkaban] Attached file appender for job ppp
+2020/09/10 01:59:50.415 +0000 INFO [ExecutorDao] [Azkaban] Uploading flowId ppp
+2020/09/10 01:59:50.462 +0000 INFO [ppp] [Azkaban] Job Started: ppp
+2020/09/10 01:59:50.604 +0000 INFO [ppp] [Azkaban] No attachment file for job ppp written.
+2020/09/10 01:59:50.620 +0000 INFO [ppp] [Azkaban] Job ppp finished with status SUCCEEDED in 0 seconds
+2020/09/10 01:59:50.630 +0000 INFO [JobCallbackManager] [Azkaban] No callback property for SUCCEEDED, exec id: 80
+2020/09/10 01:59:50.632 +0000 INFO [ppp] [Azkaban] Flow 'ppp' is set to SUCCEEDED in 0 seconds
+2020/09/10 01:59:50.663 +0000 INFO [ppp] [Azkaban] Finishing up flow. Awaiting Termination
+2020/09/10 01:59:50.692 +0000 INFO [ppp] [Azkaban] Finished Flow
+2020/09/10 01:59:50.692 +0000 INFO [ppp] [Azkaban] Setting end time for flow 80 to 1599703190692
+2020/09/10 01:59:50.755 +0000 INFO [FlowRunnerManager] [Azkaban] Flow 80 is finished. Adding it to recently finished flows list.
+2020/09/10 01:59:50.755 +0000 INFO [FlowRunnerManager] [Azkaban] Deleting execution directory for 80
+2020/09/10 01:59:50.755 +0000 INFO [FlowRunnerManager] [Azkaban] Starting execution directory deletion for 80
+2020/09/10 01:59:50.756 +0000 INFO [ppp] [Azkaban] Created FLOW_FINISHED event for 80
+2020/09/10 02:00:29.660 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 02:01:29.661 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 02:01:29.661 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/10 02:01:29.661 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning execution 80 from recently finished flows list.
+2020/09/10 02:01:29.661 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning execution 79 from recently finished flows list.
+2020/09/10 02:02:29.662 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 02:03:29.663 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 02:03:29.663 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/10 02:04:29.664 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 02:05:29.665 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 02:05:29.665 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/10 02:06:29.665 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 02:07:29.666 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 02:07:29.666 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/10 02:08:29.667 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 02:09:29.668 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 02:09:29.668 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/10 02:10:29.669 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 02:11:29.670 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 02:11:29.670 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/10 02:12:29.672 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 02:13:29.673 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 02:13:29.673 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/10 02:14:29.674 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 02:15:29.674 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 02:15:29.674 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/10 02:16:29.675 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 02:17:29.677 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 02:17:29.677 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/10 02:18:29.678 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 02:19:29.679 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 02:19:29.679 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/10 02:20:29.681 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 02:21:29.682 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 02:21:29.682 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/10 02:22:29.683 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 02:23:29.684 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 02:23:29.684 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2020/09/10 02:24:29.685 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 02:25:29.686 +0000 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2020/09/10 02:25:29.686 +0000 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
