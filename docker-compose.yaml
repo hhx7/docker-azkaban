@@ -1,18 +1,18 @@
 version: '3'
 services:
- mysql:
-  container_name: "mysql"
+ azkaban-mysql:
+  container_name: "azkaban-mysql"
   image: mysql:5.6
   restart: always
   environment:
     MYSQL_ROOT_PASSWORD: "Root@123"
+  ports:
+  - "3307:3306"
   volumes:
   - ./mysql/data:/var/lib/mysql
   - ./mysql/conf:/etc/mysql
-  ports:
-  - "3306:3306"
   networks:
-  - gbdp
+  - azkaban
 
  executor:
     image: hhx7/azkaban-executor
@@ -26,13 +26,12 @@ services:
         # command: /app/bin/start-exec.sh
     volumes:
       #- ./azkaban/azkaban-executor/bin:/app/bin
-      - ./azkaban-executor/conf:/app/conf
-      - ./azkaban-executor/log:/app/log
-      - ./azkaban-executor/test:/app/test
+      - ./azkaban/azkaban-executor/conf:/app/conf
+      - ./azkaban/azkaban-executor/log:/app/log
     links:
-      - mysql
+      - azkaban-mysql
     networks:
-      - gbdp
+      - azkaban
 
  webserver:
       image: hhx7/azkaban-webserver
@@ -46,15 +45,16 @@ services:
           - "8099:8081"
       # command: /app/bin/start-web.sh
       volumes:
-          #- ./azkaban/azkaban-webserver/bin:/app/bin
-          - ./azkaban-webserver/conf:/app/conf
-          - ./azkaban-webserver/log:/app/log
+          - ./azkaban/azkaban-webserver/bin:/app/bin
+          - ./azkaban/azkaban-webserver/conf:/app/conf
+          - ./azkaban/azkaban-webserver/log:/app/log
+      entrypoint: ./bin/run.sh
       links:
           - executor
-          - mysql
+          - azkaban-mysql
       networks:
-          - gbdp
+          - azkaban
           
 networks:
-  gbdp:
+  azkaban:
     driver: bridge
